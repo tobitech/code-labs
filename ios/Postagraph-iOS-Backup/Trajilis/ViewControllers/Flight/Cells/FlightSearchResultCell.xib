@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PTSans-Bold.ttf">
+            <string>PTSans-Bold</string>
+        </array>
+        <array key="PTSans-Regular.ttf">
+            <string>PTSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="170" id="KGk-i7-Jjw" customClass="FlightSearchResultCell" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="169.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfp-av-ykg">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="169.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eG2-Yv-aK2" customClass="CardView" customModule="Trajilis" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="339" height="153.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45E-Vn-izM">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pK5-mG-8dt">
+                                        <rect key="frame" x="8" y="11" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="TaX-eV-THD"/>
+                                            <constraint firstAttribute="width" constant="28" id="uBc-To-QDj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virgin Atlantic Airways Limited" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euI-ER-JPM">
+                                        <rect key="frame" x="44" y="16" width="206" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.21960784310000001" green="0.20392156859999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="pK5-mG-8dt" firstAttribute="leading" secondItem="45E-Vn-izM" secondAttribute="leading" constant="8" id="HIN-34-z7t"/>
+                                    <constraint firstAttribute="height" constant="50" id="JT4-hS-Ht2"/>
+                                    <constraint firstItem="pK5-mG-8dt" firstAttribute="centerY" secondItem="45E-Vn-izM" secondAttribute="centerY" id="Kzy-YE-6EJ"/>
+                                    <constraint firstItem="euI-ER-JPM" firstAttribute="leading" secondItem="pK5-mG-8dt" secondAttribute="trailing" constant="8" id="dDJ-Fj-GTd"/>
+                                    <constraint firstAttribute="trailing" secondItem="euI-ER-JPM" secondAttribute="trailing" id="gy5-z1-jQO"/>
+                                    <constraint firstItem="euI-ER-JPM" firstAttribute="centerY" secondItem="45E-Vn-izM" secondAttribute="centerY" id="kiK-Za-a0f"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHEAPEST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJ9-Xv-WNv">
+                                <rect key="frame" x="255" y="17.5" width="68" height="15"/>
+                                <color key="backgroundColor" red="0.81960784310000001" green="0.098039215690000001" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="epR-Nb-wSI"/>
+                                    <constraint firstAttribute="height" constant="15" id="yGY-za-4Z2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:50pm - 4:40pm" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLn-6h-ald">
+                                <rect key="frame" x="16" y="56" width="111" height="19.5"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.20392156859999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non-Stop" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2v-9a-b8b">
+                                <rect key="frame" x="16" y="83.5" width="61" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="kRH-Qw-X1V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Economy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5M-wT-azK">
+                                <rect key="frame" x="16" y="111.5" width="58" height="19.5"/>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7h 20m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cn-Lx-vwO">
+                                <rect key="frame" x="274" y="84" width="49" height="19.5"/>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="15"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.20392156859999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$919" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99F-SO-WZg">
+                                <rect key="frame" x="277" y="53" width="46" height="26"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="20"/>
+                                <color key="textColor" red="0.81960784310000001" green="0.098039215690000001" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="99F-SO-WZg" firstAttribute="centerY" secondItem="qLn-6h-ald" secondAttribute="centerY" id="1bv-6o-TgS"/>
+                            <constraint firstItem="s5M-wT-azK" firstAttribute="leading" secondItem="eG2-Yv-aK2" secondAttribute="leading" constant="16" id="6Zb-rN-int"/>
+                            <constraint firstItem="99F-SO-WZg" firstAttribute="trailing" secondItem="3cn-Lx-vwO" secondAttribute="trailing" id="DtA-qT-xCJ"/>
+                            <constraint firstAttribute="trailing" secondItem="RJ9-Xv-WNv" secondAttribute="trailing" constant="16" id="Fz9-3A-L0m"/>
+                            <constraint firstItem="g2v-9a-b8b" firstAttribute="leading" secondItem="eG2-Yv-aK2" secondAttribute="leading" constant="16" id="H2z-FY-8zW"/>
+                            <constraint firstItem="s5M-wT-azK" firstAttribute="top" secondItem="g2v-9a-b8b" secondAttribute="bottom" constant="8" id="Ovs-Zs-y22"/>
+                            <constraint firstItem="RJ9-Xv-WNv" firstAttribute="centerY" secondItem="euI-ER-JPM" secondAttribute="centerY" id="RWs-s9-fVN"/>
+                            <constraint firstItem="45E-Vn-izM" firstAttribute="top" secondItem="eG2-Yv-aK2" secondAttribute="top" id="RyD-Ax-OQT"/>
+                            <constraint firstItem="RJ9-Xv-WNv" firstAttribute="leading" secondItem="45E-Vn-izM" secondAttribute="trailing" constant="5" id="TiK-Xn-1yg"/>
+                            <constraint firstItem="qLn-6h-ald" firstAttribute="top" secondItem="45E-Vn-izM" secondAttribute="bottom" constant="6" id="cIH-sY-lao"/>
+                            <constraint firstItem="qLn-6h-ald" firstAttribute="leading" secondItem="eG2-Yv-aK2" secondAttribute="leading" constant="16" id="ep6-qQ-wr6"/>
+                            <constraint firstItem="g2v-9a-b8b" firstAttribute="top" secondItem="qLn-6h-ald" secondAttribute="bottom" constant="8" symbolic="YES" id="lHG-or-HZl"/>
+                            <constraint firstItem="3cn-Lx-vwO" firstAttribute="centerY" secondItem="g2v-9a-b8b" secondAttribute="centerY" id="oMl-07-VkG"/>
+                            <constraint firstAttribute="trailing" secondItem="3cn-Lx-vwO" secondAttribute="trailing" constant="16" id="qNC-qu-vfx"/>
+                            <constraint firstItem="45E-Vn-izM" firstAttribute="leading" secondItem="eG2-Yv-aK2" secondAttribute="leading" id="wVu-d9-ORS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nfp-av-ykg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Q5x-3V-LaP"/>
+                    <constraint firstItem="Nfp-av-ykg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UVZ-ku-pjy"/>
+                    <constraint firstItem="eG2-Yv-aK2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hsQ-D1-UcK"/>
+                    <constraint firstItem="eG2-Yv-aK2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="hz3-WB-mcG"/>
+                    <constraint firstAttribute="bottom" secondItem="Nfp-av-ykg" secondAttribute="bottom" id="key-qh-7BS"/>
+                    <constraint firstAttribute="trailing" secondItem="eG2-Yv-aK2" secondAttribute="trailing" constant="8" id="kyZ-cr-fSL"/>
+                    <constraint firstAttribute="trailing" secondItem="Nfp-av-ykg" secondAttribute="trailing" id="pjf-dD-uer"/>
+                    <constraint firstAttribute="bottom" secondItem="eG2-Yv-aK2" secondAttribute="bottom" constant="8" id="vxh-fR-2Nv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="airlineLogoImV" destination="pK5-mG-8dt" id="PPY-3t-Ul9"/>
+                <outlet property="airlineNameLbl" destination="euI-ER-JPM" id="UFP-bk-Zyd"/>
+                <outlet property="amountLbl" destination="99F-SO-WZg" id="0sz-zM-6do"/>
+                <outlet property="cheapestLbl" destination="RJ9-Xv-WNv" id="5nL-Mn-j9x"/>
+                <outlet property="classLbl" destination="s5M-wT-azK" id="Oew-QR-8DS"/>
+                <outlet property="dateLbl" destination="g2v-9a-b8b" id="Xru-7D-LIq"/>
+                <outlet property="duraionLbl" destination="3cn-Lx-vwO" id="8la-AN-0pE"/>
+                <outlet property="nonStopLbl" destination="g2v-9a-b8b" id="cea-py-ObZ"/>
+                <outlet property="timeLbl" destination="qLn-6h-ald" id="qTX-Fq-AiX"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="163.72767857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

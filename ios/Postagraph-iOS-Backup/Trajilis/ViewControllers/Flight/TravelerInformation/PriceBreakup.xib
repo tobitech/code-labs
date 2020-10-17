@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PriceBreakup" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prm-7i-x74">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traveler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWD-fs-z4H">
+                            <rect key="frame" x="10" y="4.5" width="55" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="nYD-zz-HuZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNe-WP-dn6">
+                            <rect key="frame" x="80" y="4.5" width="93.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxes &amp; Fees" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywm-Z7-pWN">
+                            <rect key="frame" x="181.5" y="4.5" width="93.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bo-0d-7C4">
+                            <rect key="frame" x="290" y="4.5" width="70" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="kN1-Ps-UIH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8bo-0d-7C4" firstAttribute="leading" secondItem="Ywm-Z7-pWN" secondAttribute="trailing" constant="15" id="5PT-GC-fNN"/>
+                        <constraint firstItem="WNe-WP-dn6" firstAttribute="width" secondItem="Ywm-Z7-pWN" secondAttribute="width" id="7BA-8k-AfH"/>
+                        <constraint firstItem="NWD-fs-z4H" firstAttribute="centerY" secondItem="prm-7i-x74" secondAttribute="centerY" id="CHp-Cx-QxE"/>
+                        <constraint firstItem="WNe-WP-dn6" firstAttribute="centerY" secondItem="Ywm-Z7-pWN" secondAttribute="centerY" id="LQ6-CE-H9e"/>
+                        <constraint firstItem="Ywm-Z7-pWN" firstAttribute="leading" secondItem="WNe-WP-dn6" secondAttribute="trailing" constant="8" id="O24-qk-ZLb"/>
+                        <constraint firstItem="NWD-fs-z4H" firstAttribute="centerY" secondItem="WNe-WP-dn6" secondAttribute="centerY" id="OwL-mY-f6o"/>
+                        <constraint firstAttribute="height" constant="25" id="Rdv-s4-5nm"/>
+                        <constraint firstItem="WNe-WP-dn6" firstAttribute="leading" secondItem="NWD-fs-z4H" secondAttribute="trailing" constant="15" id="UB8-sj-ay6"/>
+                        <constraint firstItem="Ywm-Z7-pWN" firstAttribute="centerY" secondItem="8bo-0d-7C4" secondAttribute="centerY" id="gXT-JU-ozE"/>
+                        <constraint firstAttribute="trailing" secondItem="8bo-0d-7C4" secondAttribute="trailing" constant="15" id="rVh-On-Ldy"/>
+                        <constraint firstItem="NWD-fs-z4H" firstAttribute="leading" secondItem="prm-7i-x74" secondAttribute="leading" constant="10" id="ubW-c7-8nI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="prm-7i-x74" secondAttribute="trailing" id="FLL-ib-GOU"/>
+                <constraint firstItem="prm-7i-x74" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Lxf-YZ-IDf"/>
+                <constraint firstAttribute="bottom" secondItem="prm-7i-x74" secondAttribute="bottom" id="VSo-Hu-A2R"/>
+                <constraint firstItem="prm-7i-x74" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pgY-4P-6VK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblBasePrice" destination="WNe-WP-dn6" id="qOS-pF-9Nk"/>
+                <outlet property="lblSubTotal" destination="8bo-0d-7C4" id="1Nd-jW-HcT"/>
+                <outlet property="lblTaxNFee" destination="Ywm-Z7-pWN" id="jRI-rd-e93"/>
+                <outlet property="lblTraveler" destination="NWD-fs-z4H" id="tnY-7E-1yj"/>
+            </connections>
+            <point key="canvasLocation" x="69.599999999999994" y="84.107946026986511"/>
+        </view>
+    </objects>
+</document>

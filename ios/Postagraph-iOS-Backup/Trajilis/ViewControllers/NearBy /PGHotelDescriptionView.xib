@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PTSans-Regular.ttf">
+            <string>PTSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="PGHotelDescriptionView" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-vG-7nR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPf-lY-dyK">
+                            <rect key="frame" x="15" y="15" width="78" height="21"/>
+                            <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aws-jU-VLM">
+                            <rect key="frame" x="15" y="43" width="35" height="19.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="wu5-Zp-xMy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j45-2i-HIT">
+                            <rect key="frame" x="15" y="259" width="345" height="8"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="8" id="cvn-BV-Q8t"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vg-kF-KFu">
+                            <rect key="frame" x="0.0" y="262" width="375" height="0.0"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDS-6j-L5w">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SC3-jS-PL4">
+                                            <rect key="frame" x="40" y="0.0" width="200" height="0.0"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SC3-jS-PL4" firstAttribute="leading" secondItem="zDS-6j-L5w" secondAttribute="leading" id="18L-8W-otv"/>
+                                        <constraint firstAttribute="trailing" secondItem="SC3-jS-PL4" secondAttribute="trailing" id="VIv-av-cOx"/>
+                                        <constraint firstItem="SC3-jS-PL4" firstAttribute="top" secondItem="zDS-6j-L5w" secondAttribute="top" id="jbv-iv-QbV"/>
+                                        <constraint firstAttribute="bottom" secondItem="SC3-jS-PL4" secondAttribute="bottom" id="kDb-dl-ej1"/>
+                                    </constraints>
+                                </scrollView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="ACF-dO-Pr9"/>
+                                <constraint firstItem="zDS-6j-L5w" firstAttribute="top" secondItem="8vg-kF-KFu" secondAttribute="top" id="No3-G2-d2Y"/>
+                                <constraint firstItem="zDS-6j-L5w" firstAttribute="leading" secondItem="8vg-kF-KFu" secondAttribute="leading" constant="15" id="S8A-rV-p5W"/>
+                                <constraint firstAttribute="trailing" secondItem="zDS-6j-L5w" secondAttribute="trailing" constant="15" id="ieg-4V-DEm"/>
+                                <constraint firstAttribute="bottom" secondItem="zDS-6j-L5w" secondAttribute="bottom" id="sA7-FX-EoR"/>
+                                <constraint firstItem="SC3-jS-PL4" firstAttribute="height" secondItem="8vg-kF-KFu" secondAttribute="height" id="zyx-8z-Elt"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDs-DM-KV6">
+                            <rect key="frame" x="300" y="10.5" width="55" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="View All"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gPf-lY-dyK" secondAttribute="trailing" constant="10" id="4k0-2b-RTg"/>
+                        <constraint firstAttribute="bottom" secondItem="8vg-kF-KFu" secondAttribute="bottom" constant="5" id="9Xm-v3-YPI"/>
+                        <constraint firstItem="QDs-DM-KV6" firstAttribute="centerY" secondItem="gPf-lY-dyK" secondAttribute="centerY" id="BXG-9g-Q5Q"/>
+                        <constraint firstItem="Aws-jU-VLM" firstAttribute="top" secondItem="gPf-lY-dyK" secondAttribute="bottom" constant="7" id="KOU-n2-hVN"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Aws-jU-VLM" secondAttribute="trailing" constant="10" id="Q0b-CF-Bob"/>
+                        <constraint firstAttribute="bottom" secondItem="j45-2i-HIT" secondAttribute="bottom" id="YPb-db-B14"/>
+                        <constraint firstAttribute="trailing" secondItem="j45-2i-HIT" secondAttribute="trailing" constant="15" id="ZdN-aV-niH"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="15" id="g7C-Nd-fXh"/>
+                        <constraint firstItem="j45-2i-HIT" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="15" id="hXT-uH-zuP"/>
+                        <constraint firstItem="8vg-kF-KFu" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" id="iOs-Hw-kHn"/>
+                        <constraint firstItem="Aws-jU-VLM" firstAttribute="leading" secondItem="gPf-lY-dyK" secondAttribute="leading" id="paR-LP-Mlr"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="top" secondItem="Bfx-vG-7nR" secondAttribute="top" constant="15" id="sUd-gy-dMa"/>
+                        <constraint firstAttribute="trailing" secondItem="8vg-kF-KFu" secondAttribute="trailing" id="ui2-cE-NLV"/>
+                        <constraint firstAttribute="trailing" secondItem="QDs-DM-KV6" secondAttribute="trailing" constant="20" id="xPs-dk-hx9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9lJ-E1-0jp"/>
+                <constraint firstAttribute="bottom" secondItem="Bfx-vG-7nR" secondAttribute="bottom" id="DYF-pG-7eQ"/>
+                <constraint firstAttribute="trailing" secondItem="Bfx-vG-7nR" secondAttribute="trailing" id="P0L-z7-9gi"/>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lg8-o6-JEv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnViewAll" destination="QDs-DM-KV6" id="8bT-XW-Xav"/>
+                <outlet property="heightImagesView" destination="ACF-dO-Pr9" id="WFk-Vv-ZQI"/>
+                <outlet property="lblDesc" destination="Aws-jU-VLM" id="pzZ-N6-vcH"/>
+                <outlet property="lblTitle" destination="gPf-lY-dyK" id="iOV-nX-4yw"/>
+                <outlet property="stackView" destination="SC3-jS-PL4" id="TFc-fV-K9y"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="116.49175412293854"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "filename" : "Nearby – 3.pdf"
+    },
+    {
+      "idiom" : "ipad",
+      "filename" : "Tripster – 1.pdf"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

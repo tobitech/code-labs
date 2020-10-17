@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlaceReviewsView" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-vG-7nR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVIEWS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPf-lY-dyK">
+                            <rect key="frame" x="15" y="15" width="88" height="24"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bwI-a7-HSo">
+                            <rect key="frame" x="0.0" y="44" width="375" height="217.5"/>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j45-2i-HIT" customClass="PTSeparatorView" customModule="Trajilis" customModuleProvider="target">
+                            <rect key="frame" x="15" y="266.5" width="345" height="0.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="cvn-BV-Q8t"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bwI-a7-HSo" secondAttribute="trailing" id="4xY-2e-ynh"/>
+                        <constraint firstItem="bwI-a7-HSo" firstAttribute="top" secondItem="gPf-lY-dyK" secondAttribute="bottom" constant="5" id="Acf-0E-OrX"/>
+                        <constraint firstItem="bwI-a7-HSo" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" id="Nfl-lL-iUT"/>
+                        <constraint firstItem="j45-2i-HIT" firstAttribute="top" secondItem="bwI-a7-HSo" secondAttribute="bottom" constant="5" id="S1s-MB-ZyV"/>
+                        <constraint firstAttribute="bottom" secondItem="j45-2i-HIT" secondAttribute="bottom" id="YPb-db-B14"/>
+                        <constraint firstAttribute="trailing" secondItem="j45-2i-HIT" secondAttribute="trailing" constant="15" id="ZdN-aV-niH"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="15" id="g7C-Nd-fXh"/>
+                        <constraint firstItem="j45-2i-HIT" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="15" id="hXT-uH-zuP"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="top" secondItem="Bfx-vG-7nR" secondAttribute="top" constant="15" id="sUd-gy-dMa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9lJ-E1-0jp"/>
+                <constraint firstAttribute="bottom" secondItem="Bfx-vG-7nR" secondAttribute="bottom" id="DYF-pG-7eQ"/>
+                <constraint firstAttribute="trailing" secondItem="Bfx-vG-7nR" secondAttribute="trailing" id="P0L-z7-9gi"/>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lg8-o6-JEv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="stackView" destination="bwI-a7-HSo" id="cZw-T9-cmn"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="116.49175412293854"/>
+        </view>
+    </objects>
+</document>

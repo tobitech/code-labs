@@ -1,0 +1,6 @@
+POST http://localhost:5000/api/url/shorten
+Content-Type: application/json
+
+{
+  "longUrl": "https://www.amazon.com/Bruno-Marc-Classic-Oxfords-Formal/dp/B07KQT5RKG/ref=pd_sbs_309_7?_encoding=UTF8&pd_rd_i=B07KQT5RKG&pd_rd_r=b7ff42f4-a36e-11e9-9331-ed4485755cdc&pd_rd_w=2kiS4&pd_rd_wg=ZFx8h&pf_rd_p=588939de-d3f8-42f1-a3d8-d556eae5797d&pf_rd_r=R5GKK0JTWPP5YB8G7C33&refRID=R5GKK0JTWPP5YB8G7C33"
+}

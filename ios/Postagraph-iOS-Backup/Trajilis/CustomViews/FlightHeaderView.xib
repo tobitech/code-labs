@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlightHeaderView" customModule="Trajilis" customModuleProvider="target">
+            <connections>
+                <outlet property="coachLabel" destination="bEh-0f-7Go" id="5DG-If-oed"/>
+                <outlet property="contentView" destination="aeb-Vk-seQ" id="Qf7-cj-nwd"/>
+                <outlet property="dateOfTravel" destination="xX1-KW-u4X" id="bdg-lk-6f7"/>
+                <outlet property="numberOfTravelerLabel" destination="gTY-A8-dMv" id="4fi-LU-CyV"/>
+                <outlet property="travelLocationLabel" destination="Oid-66-U41" id="169-dJ-Ihw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeb-Vk-seQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="5Vv-sd-yhI">
+                            <rect key="frame" x="20" y="0.0" width="335" height="52"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOS - KFK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oid-66-U41">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="38.5"/>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="eLD-vA-bcN">
+                                    <rect key="frame" x="0.0" y="38.5" width="335" height="13.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOS - KFK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xX1-KW-u4X">
+                                            <rect key="frame" x="0.0" y="0.0" width="104.5" height="13.5"/>
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="8"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOS - KFK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEh-0f-7Go">
+                                            <rect key="frame" x="104.5" y="0.0" width="104" height="13.5"/>
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="8"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 TRAVELER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTY-A8-dMv">
+                                            <rect key="frame" x="208.5" y="0.0" width="126.5" height="13.5"/>
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="8"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5Vv-sd-yhI" firstAttribute="top" secondItem="aeb-Vk-seQ" secondAttribute="top" id="03L-Zj-q8A"/>
+                        <constraint firstAttribute="trailing" secondItem="5Vv-sd-yhI" secondAttribute="trailing" constant="20" id="9TB-sn-0UV"/>
+                        <constraint firstAttribute="bottom" secondItem="5Vv-sd-yhI" secondAttribute="bottom" constant="8" id="VbL-eR-Mst"/>
+                        <constraint firstItem="5Vv-sd-yhI" firstAttribute="leading" secondItem="aeb-Vk-seQ" secondAttribute="leading" constant="20" id="Woj-Fx-AGu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aeb-Vk-seQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0FE-Rd-huU"/>
+                <constraint firstItem="aeb-Vk-seQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CiC-vf-eM2"/>
+                <constraint firstItem="aeb-Vk-seQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="UaD-79-UOy"/>
+                <constraint firstAttribute="bottom" secondItem="aeb-Vk-seQ" secondAttribute="bottom" id="rMX-j9-ztq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="249.1754122938531"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,113 @@
+{
+    "exploreCities" : {
+        "PDL" : {
+            "cityInformation" : {
+                "_id" : "5caf47ca15f280000f70dc80",
+                "code" : "PDL",
+                "country_name" : "Portugal",
+                "city_photo" : "https:\/\/content.airhex.com\/content\/city_photos\/5725.jpg",
+                "timezone" : "Atlantic\/Azores",
+                "name" : "Ponta Delgada",
+                "state_full" : null
+            }
+        },
+        "LYS" : {
+            "cityInformation" : {
+                "_id" : "5caf478415f280000f70cf97",
+                "code" : "LYS",
+                "country_name" : "France",
+                "city_photo" : "https:\/\/content.airhex.com\/content\/city_photos\/4405.jpg",
+                "timezone" : "Europe\/Paris",
+                "name" : "Lyon",
+                "state_full" : null
+            }
+        },
+        "BJL" : {
+            "cityInformation" : {
+                "_id" : "5caf47bc15f280000f70d9e4",
+                "code" : "BJL",
+                "country_name" : "Gambia",
+                "city_photo" : "https:\/\/content.airhex.com\/content\/city_photos\/734.jpg",
+                "timezone" : "Africa\/Banjul",
+                "name" : "Banjul",
+                "state_full" : null
+            }
+        },
+        "DOH" : {
+            "cityInformation" : {
+                "_id" : "5caf478915f280000f70d05e",
+                "code" : "DOH",
+                "country_name" : "Qatar",
+                "city_photo" : "https:\/\/content.airhex.com\/content\/city_photos\/1813.jpg",
+                "timezone" : "Asia\/Qatar",
+                "name" : "Doha",
+                "state_full" : null
+            }
+        },
+        "LAX" : {
+            "cityInformation" : {
+                "_id" : "5caf477815f280000f70cd5a",
+                "code" : "LAX",
+                "country_name" : "United States",
+                "city_photo" : "https:\/\/content.airhex.com\/content\/city_photos\/3991.jpg",
+                "timezone" : "America\/Los_Angeles",
+                "name" : "Los Angeles",
+                "state_full" : "California"
+            }
+        },
+        "PVR" : {
+            "cityInformation" : {
+                "_id" : "5caf479315f280000f70d257",
+                "code" : "PVR",
+                "country_name" : "Mexico",
+                "city_photo" : "https:\/\/content.airhex.com\/content\/city_photos\/6093.jpg",
+                "timezone" : "America\/Mexico_City",
+                "name" : "Puerto Vallarta",
+                "state_full" : null
+            }
+        },
+        "DKR" : {
+            "cityInformation" : {
+                "_id" : "5caf477a15f280000f70cd93",
+                "code" : "DKR",
+                "country_name" : "Senegal",
+                "city_photo" : "https:\/\/content.airhex.com\/content\/city_photos\/1760.jpg",
+                "timezone" : "Africa\/Dakar",
+                "name" : "Dakar",
+                "state_full" : null
+            }
+        },
+        "ZAD" : {
+            "cityInformation" : {
+                "_id" : "5caf47aa15f280000f70d69b",
+                "code" : "ZAD",
+                "country_name" : "Croatia",
+                "city_photo" : "https:\/\/content.airhex.com\/content\/city_photos\/9059.jpg",
+                "timezone" : "Europe\/Zagreb",
+                "name" : "Zadar",
+                "state_full" : null
+            }
+        },
+        "RAK" : {
+            "cityInformation" : {
+                "code" : "RAK",
+                "timezone" : "Africa\/Casablanca",
+                "_id" : "5caf477f15f280000f70ce7c",
+                "name" : "Marrakech",
+                "country_name" : "Morocco",
+                "state_full" : null
+            }
+        },
+        "LAS" : {
+            "cityInformation" : {
+                "_id" : "5caf478115f280000f70cefb",
+                "code" : "LAS",
+                "country_name" : "United States",
+                "city_photo" : "https:\/\/content.airhex.com\/content\/city_photos\/3986.jpg",
+                "timezone" : "America\/Los_Angeles",
+                "name" : "Las Vegas",
+                "state_full" : "Nevada"
+            }
+        }
+    }
+}

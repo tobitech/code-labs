@@ -1,0 +1,23 @@
+//
+//  Production.xcconfig
+//  EnvironmentsConfig
+//
+//  Created by Oluwatobi Omotayo on 06/05/2020.
+//  Copyright © 2020 Oluwatobi Omotayo. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Server URL
+ROOT_URL = http:/$()/www.envconfigapp.tobiomotayo.com
+
+// Keys
+API_KEY = 9ud0930djd_md9zdjdko3830lb0d
+
+// App Settings
+APP_NAME = EnvCofigApp
+APP_BUNDLE_ID = com.tobiomotayo.EnvCofigApp
+
+// App Icon
+APP_ICON = AppIcon

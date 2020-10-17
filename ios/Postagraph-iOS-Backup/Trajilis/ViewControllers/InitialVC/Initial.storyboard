@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ihu-kc-AeT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--InitialVC-->
+        <scene sceneID="fc5-SU-O0r">
+            <objects>
+                <viewController id="E9b-R9-yAW" customClass="InitialVC" customModule="Trajilis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FyB-Vk-rYC"/>
+                        <viewControllerLayoutGuide type="bottom" id="PuM-kO-ipN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kGW-BB-yyN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="2jS-vG-4Yh">
+                                <rect key="frame" x="130.5" y="276.5" width="114" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="Jbg-bF-HAn"/>
+                                    <constraint firstAttribute="width" constant="114" id="tBD-bZ-3zn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2jS-vG-4Yh" firstAttribute="centerY" secondItem="kGW-BB-yyN" secondAttribute="centerY" id="dWq-uI-s2f"/>
+                            <constraint firstItem="2jS-vG-4Yh" firstAttribute="centerX" secondItem="kGW-BB-yyN" secondAttribute="centerX" id="nRX-zy-mNy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rou-VN-ytB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="in9-ZH-7Xi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2135.1999999999998" y="-214.54272863568218"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cMO-Rg-SvC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ihu-kc-AeT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PTK-oQ-Kek">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E9b-R9-yAW" kind="relationship" relationship="rootViewController" id="TnT-NR-erz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGj-ej-nEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="-214.54272863568218"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="114" height="114"/>
+    </resources>
+</document>

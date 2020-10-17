@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="Trajilis" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Rf2-2r-Iw8" id="cFU-Qz-rnp"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="eFD-mS-nir"/>
+                <outlet property="headerLabel" destination="SGQ-HI-sI4" id="nmZ-6k-KyJ"/>
+                <outlet property="searchBar" destination="AZU-hn-Vfh" id="FEC-fN-hwH"/>
+                <outlet property="suggestedButton" destination="Btj-0A-xEx" id="4jV-Y0-fz5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rf2-2r-Iw8">
+                    <rect key="frame" x="20" y="16" width="335" height="50"/>
+                    <subviews>
+                        <searchBar contentMode="scaleAspectFill" searchBarStyle="minimal" placeholder="City, airport, or place" translatesAutoresizingMaskIntoConstraints="NO" id="AZU-hn-Vfh">
+                            <rect key="frame" x="4" y="-3" width="323" height="56"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="AZU-hn-Vfh" firstAttribute="leading" secondItem="Rf2-2r-Iw8" secondAttribute="leading" constant="4" id="LNI-ux-BtM"/>
+                        <constraint firstAttribute="height" constant="50" id="P2t-PL-qne"/>
+                        <constraint firstAttribute="trailing" secondItem="AZU-hn-Vfh" secondAttribute="trailing" constant="8" id="Ufr-oQ-hm4"/>
+                        <constraint firstItem="AZU-hn-Vfh" firstAttribute="centerY" secondItem="Rf2-2r-Iw8" secondAttribute="centerY" id="dqW-ua-osg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.88235294119999996" green="0.89411764709999997" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornenrRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGQ-HI-sI4">
+                    <rect key="frame" x="20" y="8" width="335" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <color key="textColor" red="0.2196078431372549" green="0.20392156862745098" blue="0.30196078431372547" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggested" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btj-0A-xEx">
+                    <rect key="frame" x="127.5" y="82" width="120" height="38"/>
+                    <color key="backgroundColor" red="0.81176470590000005" green="0.1137254902" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="4Io-II-jXD"/>
+                        <constraint firstAttribute="height" constant="38" id="Hpi-9M-twI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.98271197079999995" green="0.98345524070000001" blue="0.98282712699999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Btj-0A-xEx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8It-y2-CjU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SGQ-HI-sI4" secondAttribute="trailing" constant="20" id="Coe-LP-nKA"/>
+                <constraint firstItem="SGQ-HI-sI4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="DAh-Tg-HQf"/>
+                <constraint firstItem="SGQ-HI-sI4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="FOs-el-srr"/>
+                <constraint firstItem="Rf2-2r-Iw8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="WMZ-PH-fno"/>
+                <constraint firstItem="Rf2-2r-Iw8" firstAttribute="top" secondItem="SGQ-HI-sI4" secondAttribute="bottom" constant="8" id="dvA-qW-BYF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Rf2-2r-Iw8" secondAttribute="trailing" constant="20" id="mxC-af-ITR"/>
+                <constraint firstItem="Btj-0A-xEx" firstAttribute="top" secondItem="Rf2-2r-Iw8" secondAttribute="bottom" constant="16" id="rtP-Wf-FTw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-160.56971514242881"/>
+        </view>
+    </objects>
+</document>

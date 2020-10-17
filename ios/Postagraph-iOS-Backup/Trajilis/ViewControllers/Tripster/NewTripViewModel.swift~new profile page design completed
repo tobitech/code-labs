@@ -1,0 +1,99 @@
+//
+//  NewTripViewModel.swift
+//  Trajilis
+//
+//  Created by Johnson Ejezie on 17/02/2019.
+//  Copyright © 2019 Johnson. All rights reserved.
+//
+
+import Foundation
+
+final class NewTripViewModel {
+
+    var searchUserForTripResponse = [CondensedUser]()
+    var selectedUsers = [CondensedUser]()
+
+    var currentPage = 0
+    var limit = 100
+    var isLastCount = false
+    var reload: (() -> ())?
+
+    var trip: Trip?
+
+    var searchUserForTripComplete: ((String?) -> ())?
+    var saveNewTripComplete: ((String?) -> ())?
+
+
+    func add(user: CondensedUser) {
+        if let index = selectedUsers.firstIndex(where: { user.userId == $0.userId }) {
+            selectedUsers.remove(at: index)
+        } else {
+            selectedUsers.append(user)
+        }
+    }
+
+    func isSelected(user: CondensedUser) -> Bool {
+        return selectedUsers.contains(where: { user.userId == $0.userId })
+    }
+
+    func saveNewTrip(tripName: String, startDate: String, endDate: String, location: String, description: String, invitedUser: String, lat: String, long: String) {
+        guard let userId = UserDefaults.standard.string(forKey: USERID) else { return }
+
+        let jsonParam: JSONDictionary = [
+            "description": description,
+            "end_date": endDate,
+            "start_date": startDate,
+            "location": location,
+            "lon": long,
+            "lat": lat,
+            "invited_user": invitedUser,
+            "user_id": userId,
+            "tri_name": tripName
+        ]
+
+        APIController.makeRequest(request: .saveTrip(param: jsonParam)) {[weak self] (response) in
+            switch response {
+            case .failure(let error):
+                self?.saveNewTripComplete?(error.desc)
+            case .success(let value):
+                guard let json = try? value.mapJSON() as? JSONDictionary,
+                let meta = json?["meta"] as? JSONDictionary,
+                let status = meta["status"] as? String else { return }
+                if status == "200" {
+                    self?.saveNewTripComplete?(nil)
+                } else {
+                    self?.saveNewTripComplete?(meta["message"] as? String ?? "")
+                }
+                print("JSON \(String(describing: json?.debugDescription))")
+
+            }
+        }
+    }
+
+    func searchUserForTrip(searchParam: String, tripId: String) {
+        guard let userId = UserDefaults.standard.string(forKey: USERID) else { return }
+        let param: JSONDictionary = [
+            "limit": limit,
+            "count": currentPage,
+            "user_id": userId,
+            "search_string": searchParam,
+            "trip_id": tripId
+        ]
+        APIController.makeRequest(request: .searchUserForTrip(param: param)) {[weak self] (response) in
+            switch response {
+            case .failure(let error):
+                self?.searchUserForTripComplete?(error.desc)
+            case .success(let value):
+                guard let json = try? value.mapJSON() as? JSONDictionary, let searchUserTripData = json?["data"] as? [JSONDictionary] else { return }
+                let searchUsersForTrip = searchUserTripData.compactMap{ CondensedUser.init(json: $0) }
+                guard let sSelf = self else { return }
+                if sSelf.currentPage > 0 {
+                    sSelf.searchUserForTripResponse.append(contentsOf: searchUsersForTrip)
+                }else {
+                    sSelf.searchUserForTripResponse = searchUsersForTrip
+                }
+                self?.searchUserForTripComplete?(nil)
+            }
+        }
+    }
+}

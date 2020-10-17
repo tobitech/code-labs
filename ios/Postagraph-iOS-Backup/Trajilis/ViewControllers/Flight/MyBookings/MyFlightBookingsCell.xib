@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="segoeuib.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyFlightBookingsCell" rowHeight="173" id="KGk-i7-Jjw" customClass="MyFlightBookingsCell" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="162.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-j5-SAn" customClass="CardView" customModule="Trajilis" customModuleProvider="target">
+                        <rect key="frame" x="8" y="16.5" width="309" height="135"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-Lf-LGT">
+                                <rect key="frame" x="10" y="10" width="29" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d78-sE-70D">
+                                <rect key="frame" x="10" y="29.5" width="29" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27n-e2-5uZ">
+                                <rect key="frame" x="10" y="81" width="29" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpP-1D-ApK">
+                                <rect key="frame" x="42" y="68.5" width="11.5" height="36"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJh-sp-tPL">
+                                <rect key="frame" x="56.5" y="81" width="29" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znC-ro-abq">
+                                <rect key="frame" x="10" y="57.5" width="37.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZE-8D-lEE">
+                                <rect key="frame" x="265" y="10" width="29" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55U-jj-rzd">
+                                <rect key="frame" x="195" y="99" width="99" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Xry-xE-rRS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="17"/>
+                                <state key="normal" title="View Details"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPG-Xn-7m9">
+                                <rect key="frame" x="10" y="108" width="33" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="27n-e2-5uZ" firstAttribute="leading" secondItem="znC-ro-abq" secondAttribute="leading" id="2Fh-fr-Adn"/>
+                            <constraint firstItem="9VI-Lf-LGT" firstAttribute="top" secondItem="nAM-j5-SAn" secondAttribute="top" constant="10" id="2cY-Xv-FEQ"/>
+                            <constraint firstAttribute="height" constant="135" id="4ez-go-8B0"/>
+                            <constraint firstAttribute="bottom" secondItem="55U-jj-rzd" secondAttribute="bottom" constant="1" id="52Z-vG-eDt"/>
+                            <constraint firstAttribute="trailing" secondItem="wZE-8D-lEE" secondAttribute="trailing" constant="15" id="C2w-Rd-LEn"/>
+                            <constraint firstItem="xJh-sp-tPL" firstAttribute="leading" secondItem="FpP-1D-ApK" secondAttribute="trailing" constant="3" id="CRM-I3-M9e"/>
+                            <constraint firstItem="9VI-Lf-LGT" firstAttribute="leading" secondItem="nAM-j5-SAn" secondAttribute="leading" constant="10" id="DCF-vF-XGz"/>
+                            <constraint firstItem="wZE-8D-lEE" firstAttribute="centerY" secondItem="9VI-Lf-LGT" secondAttribute="centerY" id="Ejs-bp-hPW"/>
+                            <constraint firstItem="d78-sE-70D" firstAttribute="top" secondItem="9VI-Lf-LGT" secondAttribute="bottom" constant="5" id="ITz-cn-ijk"/>
+                            <constraint firstItem="znC-ro-abq" firstAttribute="leading" secondItem="d78-sE-70D" secondAttribute="leading" id="Rjl-Qg-mGZ"/>
+                            <constraint firstItem="znC-ro-abq" firstAttribute="centerY" secondItem="nAM-j5-SAn" secondAttribute="centerY" id="TQ0-y9-KLV"/>
+                            <constraint firstItem="zPG-Xn-7m9" firstAttribute="leading" secondItem="znC-ro-abq" secondAttribute="leading" id="UVq-OC-PAP"/>
+                            <constraint firstItem="27n-e2-5uZ" firstAttribute="top" secondItem="znC-ro-abq" secondAttribute="bottom" constant="4" id="Wd5-B5-Ybp"/>
+                            <constraint firstItem="FpP-1D-ApK" firstAttribute="leading" secondItem="27n-e2-5uZ" secondAttribute="trailing" constant="3" id="ZBs-Vu-XZL"/>
+                            <constraint firstItem="xJh-sp-tPL" firstAttribute="centerY" secondItem="27n-e2-5uZ" secondAttribute="centerY" id="a2f-N0-0V0"/>
+                            <constraint firstItem="wZE-8D-lEE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9VI-Lf-LGT" secondAttribute="trailing" constant="5" id="aeg-8M-JDj"/>
+                            <constraint firstItem="55U-jj-rzd" firstAttribute="trailing" secondItem="wZE-8D-lEE" secondAttribute="trailing" id="cdn-94-mDZ"/>
+                            <constraint firstItem="55U-jj-rzd" firstAttribute="centerY" secondItem="zPG-Xn-7m9" secondAttribute="centerY" id="kcl-Ld-rEW"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="znC-ro-abq" secondAttribute="trailing" constant="10" id="rei-He-2E0"/>
+                            <constraint firstItem="d78-sE-70D" firstAttribute="leading" secondItem="9VI-Lf-LGT" secondAttribute="leading" id="t16-h7-O4b"/>
+                            <constraint firstItem="FpP-1D-ApK" firstAttribute="centerY" secondItem="27n-e2-5uZ" secondAttribute="centerY" constant="-2" id="twC-i2-UmI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nAM-j5-SAn" secondAttribute="trailing" constant="8" id="4PZ-WO-fJi"/>
+                    <constraint firstItem="nAM-j5-SAn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="guc-pE-g1V"/>
+                    <constraint firstItem="nAM-j5-SAn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="x84-b0-UQA"/>
+                    <constraint firstAttribute="bottom" secondItem="nAM-j5-SAn" secondAttribute="bottom" constant="16" id="zsa-Au-Idx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnViewDetails" destination="55U-jj-rzd" id="Zy2-HF-13I"/>
+                <outlet property="lblArrival" destination="xJh-sp-tPL" id="oWL-j7-9YZ"/>
+                <outlet property="lblDate" destination="d78-sE-70D" id="QcX-y7-vNB"/>
+                <outlet property="lblDeparture" destination="27n-e2-5uZ" id="5m6-oI-2kI"/>
+                <outlet property="lblName" destination="znC-ro-abq" id="RNN-xa-5dH"/>
+                <outlet property="lblPrice" destination="wZE-8D-lEE" id="wmQ-da-ZKq"/>
+                <outlet property="lblTicketNum" destination="9VI-Lf-LGT" id="fv3-Gh-MpR"/>
+                <outlet property="lblType" destination="zPG-Xn-7m9" id="WWd-r4-TEx"/>
+            </connections>
+            <point key="canvasLocation" x="141.59999999999999" y="74.212893553223395"/>
+        </tableViewCell>
+    </objects>
+</document>

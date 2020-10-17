@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FCb-3o-tpj">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurvedTabBarWithRoundButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2fx-iy-DJU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2356.875" y="158.45070422535213"/>
+        </scene>
+        <!--My Tab Bar Ctrl-->
+        <scene sceneID="7TS-CR-eCY">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FCb-3o-tpj" customClass="MyTabBarCtrl" customModule="CurvedTabBarWithRoundButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sjy-c6-NIp" customClass="MyTabBar" customModule="CurvedTabBarWithRoundButton" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nH4-Rl-chv" kind="relationship" relationship="viewControllers" id="287-By-Xld"/>
+                        <segue destination="cVm-e4-SK4" kind="relationship" relationship="viewControllers" id="wq9-uZ-yEo"/>
+                        <segue destination="WPv-u6-S3k" kind="relationship" relationship="viewControllers" id="7X4-L6-WRC"/>
+                        <segue destination="N1b-Ss-k1B" kind="relationship" relationship="viewControllers" id="zZx-jz-sdp"/>
+                        <segue destination="Kdq-ur-uLw" kind="relationship" relationship="viewControllers" id="VSL-9v-enl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zce-Hb-gDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="192"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dD8-rZ-T4D">
+            <objects>
+                <viewController id="cVm-e4-SK4" customClass="ViewController" customModule="CurvedTabBarWithRoundButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yxd-Ki-3Vj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1jM-zG-MfE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="folder.fill" catalog="system" selectedImage="folder.fill" id="cKF-Zd-fEg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIU-2F-OD9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="-575"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zD9-jd-yQc">
+            <objects>
+                <viewController id="Kdq-ur-uLw" customClass="ViewController" customModule="CurvedTabBarWithRoundButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yUL-wB-yi6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="636-6m-K8z"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="safari.fill" catalog="system" selectedImage="safari.fill" id="3Be-8t-GeJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmg-YF-794" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2759" y="-596"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dkq-Af-BdS">
+            <objects>
+                <viewController id="WPv-u6-S3k" customClass="ViewController" customModule="CurvedTabBarWithRoundButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kXu-hb-gMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wDI-Tr-Wve"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="UYr-uh-AtD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5R-9Q-jHC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="897"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XfV-3a-Eto">
+            <objects>
+                <viewController id="N1b-Ss-k1B" customClass="ViewController" customModule="CurvedTabBarWithRoundButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="36f-kF-zlp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QaD-4L-eWH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="trash.fill" catalog="system" selectedImage="trash.fill" id="z3r-19-cTj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rL9-b9-VFV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3753.75" y="136.26760563380282"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hty-vo-lV3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nH4-Rl-chv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="book.fill" catalog="system" selectedImage="book.fill" id="3sA-OV-Dgf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SwJ-eH-n7u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J3g-ha-ZaX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n9l-S5-uk8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359.375" y="158.45070422535213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="folder.fill" catalog="system" width="128" height="95"/>
+        <image name="safari.fill" catalog="system" width="128" height="121"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+    </resources>
+</document>

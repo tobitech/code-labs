@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PTSans-Regular.ttf">
+            <string>PTSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlightOptionsCVCell" id="gTV-IL-0wX" customClass="FlightOptionsCVCell" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="47"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="47"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjm-id-lBo">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="47"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal item" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXr-C4-kLL">
+                                <rect key="frame" x="8" y="15.5" width="124" height="16"/>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
+                                <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tXr-C4-kLL" firstAttribute="centerY" secondItem="bjm-id-lBo" secondAttribute="centerY" id="9Yh-Pd-WtG"/>
+                            <constraint firstAttribute="trailing" secondItem="tXr-C4-kLL" secondAttribute="trailing" constant="8" id="GBj-sj-Xyl"/>
+                            <constraint firstItem="tXr-C4-kLL" firstAttribute="leading" secondItem="bjm-id-lBo" secondAttribute="leading" constant="8" id="MwJ-g4-6Xq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bjm-id-lBo" secondAttribute="bottom" id="0o1-HE-MOl"/>
+                <constraint firstAttribute="trailing" secondItem="bjm-id-lBo" secondAttribute="trailing" id="2QX-tz-zgt"/>
+                <constraint firstItem="bjm-id-lBo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ART-YT-CLD"/>
+                <constraint firstItem="bjm-id-lBo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="s5V-Qt-4Rd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="167" height="47"/>
+            <connections>
+                <outlet property="serviceNamelbl" destination="tXr-C4-kLL" id="e87-CO-RUf"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="99.441964285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feathers Example</title>
+    <link rel="stylesheet" href="//unpkg.com/feathers-chat@4.0.0/public/base.css">
+    <link rel="stylesheet" href="//unpkg.com/feathers-chat@4.0.0/public/chat.css">
+</head>
+<body>
+    <main id="main" class="container">
+        <h1>Welcome to Feathers</h1>
+        <form class="form" onsubmit="sendMessage(event.preventDefault())">
+            <input type="text" placeholder="Enter message here" id="message-text">
+            <button type="submit" class="button button-primary">Send Message</button>
+        </form>
+
+        <h2>Here are the current messages</h2>
+    </main>
+
+    <script src="//unpkg.com/@feathersjs/client@^4.3.0/dist/feathers.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>

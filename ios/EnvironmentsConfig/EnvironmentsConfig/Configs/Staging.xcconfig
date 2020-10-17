@@ -1,0 +1,23 @@
+//
+//  Staging.xcconfig
+//  EnvironmentsConfig
+//
+//  Created by Oluwatobi Omotayo on 06/05/2020.
+//  Copyright © 2020 Oluwatobi Omotayo. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Server URL
+ROOT_URL = http:/$()/www.staging.envconfigapp.tobiomotayo.com
+
+// Keys
+API_KEY = 89dhdyd93380dkqmoe_hd830dhq
+
+// App Settings
+APP_NAME = EnvCofigApp (staging)
+APP_BUNDLE_ID = com.tobiomotayo.EnvCofigApp.staging
+
+// App Icon
+APP_ICON = AppIconStaging

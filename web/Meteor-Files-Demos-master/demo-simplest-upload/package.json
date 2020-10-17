@@ -1,0 +1,11 @@
+{
+  "name": "meteor-files-demo-insert",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.54",
+    "meteor-node-stubs": "^0.4.1"
+  }
+}

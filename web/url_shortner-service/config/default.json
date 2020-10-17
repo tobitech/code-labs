@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb://tobitech:perfectTOBI9@ds042898.mlab.com:42898/url_shortner",
+  "baseUrl": "http://localhost:5000"
+}

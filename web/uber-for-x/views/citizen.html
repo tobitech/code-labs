@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Citizen <%= userId %> </title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body data-userId="<%= userId %>">
+    <h1>Hello Citizen <%= userId %></h1>
+    <h4 id="notification">
+        <!-- Some info will be displayed here-->
+    </h4>
+    <button onclick="requestForHelp()">Request for help</button>
+    <div id="map" style="width: 600px; height: 400px;">
+        <!-- We will load a map here later-->
+    </div>
+    <!--Load JavaScripts -->
+    <!-- Load socket.io client library -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Load JQuery from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Load libraries before your JS Code: Write rest of your JS code here. -->
+
+    <script type="text/javascript">
+        var socket = io()
+
+        // Fetch userId from the data-attribute of the body tag
+        var userId = document.body.getAttribute("data-userId")
+
+        /* Fire a 'json' event and send your userId to the server, to join a room - room-name will be userId itself! */
+        socket.emit("join", { userId: userId })
+
+        // declare variables, this will be used later.
+        var requestDetails = {}
+        var copDetails = {}
+        var map, marker
+
+        // Citizen's info
+        requestDetails = {
+            citizenId: userId,
+            location: {
+                address: "Indiranagar, Bengaluru, Karnataka 560038, India",
+                latitude: 12.9718915,
+                longitude: 77.64115449999997
+            }
+        }
+
+        // When button is clicked, fire request-for-help and send citizen's userId and location
+        function requestForHelp() {
+            socket.emit("request-for-help", requestDetails)
+        }
+
+        //Listen for a "request-accepted" event
+        socket.on("request-accepted", function (eventData) {
+            copDetails = eventData; //Save cop details
+            //Display Cop details
+            document.getElementById("notification").innerHTML = "A cop is coming to your rescue! \n" + JSON.stringify(copDetails);
+
+            //Show cop location on the map
+            mapboxgl.marker([copDetails.location.latitude, copDetails.location.longitude], {
+                icon: L.icon({
+                    iconUrl: '/images/police.png',
+                    iconSize: [60, 28]
+                })
+            }).addTo(map);
+        });
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoidG9iaXRlY2giLCJhIjoiY2l3dmcybGh2MDAybjJ6bnU3cDk1NnRhaCJ9.-8IH87TmetC0kVjbGkW-cA';
+        map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/tobitech/cjskuccc311m31fnsc8wr3svz',
+            center: [-71.020000, 42.362400],
+            zoom: 10.0
+        });
+
+        //set it to a given lat-lng and zoom level
+        map.setView([12.9718915, 77.64115449999997], 9);
+        //Display a default marker
+        marker = mapboxgl.marker([12.9718915, 77.64115449999997]).addTo(map)
+
+        //This will display an input box
+        map.addControl(mapboxgl.mapbox.geocoderControl("mapbox.places", {
+            autocomplete: true, //will suggest for places as you type
+        }).on("select", function (data) {
+            //This function runs when a place is selected
+            //data contains the geocoding results
+            console.log(data);
+            //Do something with the results
+            //Extract address and coordinates from the results and save it
+            requestDetails.location = {
+                address: data.feature["place_name"],
+                latitude: data.feature.center[1],
+                longitude: data.feature.center[0]
+            };
+            //Set the marker to new location
+            marker.setLatLng([data.feature.center[1], data.feature.center[0]]);
+        }));
+
+    </script>
+</body>
+
+</html>

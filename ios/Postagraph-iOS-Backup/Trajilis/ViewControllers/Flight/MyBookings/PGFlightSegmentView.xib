@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="PGFlightSegmentView" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-vG-7nR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vg-kF-KFu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SC3-jS-PL4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26m-QS-I78">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DepAirport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTl-jN-uI0">
+                                                    <rect key="frame" x="15" y="5" width="71" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                                    <color key="textColor" red="0.78039215689999997" green="0.031372549020000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="AirportNm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PI9-dC-tbg">
+                                                    <rect key="frame" x="15" y="24" width="56.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                    <color key="textColor" white="0.57861551089999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DEP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7o-1V-qre">
+                                                    <rect key="frame" x="15" y="92" width="23.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                    <color key="textColor" white="0.57861551089999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="AirportNm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3R-sM-NTF">
+                                                    <rect key="frame" x="15" y="106.5" width="66" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ARR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-6e-bon">
+                                                    <rect key="frame" x="197.5" y="92" width="23.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                    <color key="textColor" white="0.57861551089999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="AirportNm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm5-iZ-vCA">
+                                                    <rect key="frame" x="197.5" y="106.5" width="66" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hg-3Z-dyJ">
+                                                    <rect key="frame" x="15" y="141" width="47" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                    <color key="textColor" white="0.57861551089999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AirportNm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10O-uu-J4k">
+                                                    <rect key="frame" x="15" y="156" width="66" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operated By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYj-se-YFf">
+                                                    <rect key="frame" x="286.5" y="156" width="78.5" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Flight Num" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5u-ag-EAO">
+                                                    <rect key="frame" x="301.5" y="6.5" width="58.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DepAirport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbI-59-sB2">
+                                                    <rect key="frame" x="15" y="48.5" width="71" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                                    <color key="textColor" red="0.78039215689999997" green="0.031372549020000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="AirportNm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jh-z5-KpE">
+                                                    <rect key="frame" x="15" y="67.5" width="56.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                    <color key="textColor" white="0.57861551089999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="3Hg-3Z-dyJ" firstAttribute="top" secondItem="f3R-sM-NTF" secondAttribute="bottom" constant="17.5" id="0bR-ko-gpu"/>
+                                                <constraint firstItem="a7o-1V-qre" firstAttribute="leading" secondItem="PI9-dC-tbg" secondAttribute="leading" id="1ju-Yw-hqD"/>
+                                                <constraint firstItem="fm5-iZ-vCA" firstAttribute="leading" secondItem="bL1-6e-bon" secondAttribute="leading" id="AKQ-9N-KFO"/>
+                                                <constraint firstItem="nbI-59-sB2" firstAttribute="top" secondItem="PI9-dC-tbg" secondAttribute="bottom" constant="10" id="Dj9-jL-nXq"/>
+                                                <constraint firstItem="fm5-iZ-vCA" firstAttribute="top" secondItem="bL1-6e-bon" secondAttribute="bottom" id="EuP-iV-HxP"/>
+                                                <constraint firstItem="f3R-sM-NTF" firstAttribute="leading" secondItem="a7o-1V-qre" secondAttribute="leading" id="HAN-Qv-KXj"/>
+                                                <constraint firstItem="FYj-se-YFf" firstAttribute="centerY" secondItem="10O-uu-J4k" secondAttribute="centerY" id="J6J-80-FTg"/>
+                                                <constraint firstItem="f3R-sM-NTF" firstAttribute="top" secondItem="a7o-1V-qre" secondAttribute="bottom" id="JGi-nW-k0s"/>
+                                                <constraint firstAttribute="trailing" secondItem="FYj-se-YFf" secondAttribute="trailing" constant="10" id="M5d-KK-2bE"/>
+                                                <constraint firstAttribute="trailing" secondItem="O5u-ag-EAO" secondAttribute="trailing" constant="15" id="Pv4-33-BHq"/>
+                                                <constraint firstItem="10O-uu-J4k" firstAttribute="top" secondItem="3Hg-3Z-dyJ" secondAttribute="bottom" id="RPG-vY-1Qj"/>
+                                                <constraint firstItem="10O-uu-J4k" firstAttribute="leading" secondItem="3Hg-3Z-dyJ" secondAttribute="leading" id="RiR-mi-XIj"/>
+                                                <constraint firstItem="3Hg-3Z-dyJ" firstAttribute="leading" secondItem="f3R-sM-NTF" secondAttribute="leading" id="Sl4-7a-4pF"/>
+                                                <constraint firstItem="DTl-jN-uI0" firstAttribute="top" secondItem="26m-QS-I78" secondAttribute="top" constant="5" id="VQu-g0-SbH"/>
+                                                <constraint firstItem="bL1-6e-bon" firstAttribute="leading" secondItem="26m-QS-I78" secondAttribute="centerX" constant="10" id="WNn-cQ-VUS"/>
+                                                <constraint firstItem="nbI-59-sB2" firstAttribute="leading" secondItem="PI9-dC-tbg" secondAttribute="leading" id="a2G-Ip-Jpy"/>
+                                                <constraint firstItem="PI9-dC-tbg" firstAttribute="leading" secondItem="DTl-jN-uI0" secondAttribute="leading" id="dhK-RS-Fpq"/>
+                                                <constraint firstItem="PI9-dC-tbg" firstAttribute="top" secondItem="DTl-jN-uI0" secondAttribute="bottom" constant="2" id="e0e-KW-bFr"/>
+                                                <constraint firstItem="O5u-ag-EAO" firstAttribute="centerY" secondItem="DTl-jN-uI0" secondAttribute="centerY" id="eLB-2v-XIp"/>
+                                                <constraint firstItem="7jh-z5-KpE" firstAttribute="leading" secondItem="nbI-59-sB2" secondAttribute="leading" id="hT2-Wr-DOy"/>
+                                                <constraint firstItem="7jh-z5-KpE" firstAttribute="top" secondItem="nbI-59-sB2" secondAttribute="bottom" constant="2" id="lsj-Kt-CCW"/>
+                                                <constraint firstItem="DTl-jN-uI0" firstAttribute="leading" secondItem="26m-QS-I78" secondAttribute="leading" constant="15" id="sAJ-8A-Vtn"/>
+                                                <constraint firstItem="bL1-6e-bon" firstAttribute="centerY" secondItem="a7o-1V-qre" secondAttribute="centerY" id="sQI-Pi-ac3"/>
+                                                <constraint firstAttribute="bottom" secondItem="FYj-se-YFf" secondAttribute="bottom" constant="12" id="yzY-In-WLK"/>
+                                                <constraint firstItem="a7o-1V-qre" firstAttribute="top" secondItem="7jh-z5-KpE" secondAttribute="bottom" constant="10" id="zIU-0m-8FV"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="SC3-jS-PL4" firstAttribute="top" secondItem="8vg-kF-KFu" secondAttribute="top" id="KyO-F9-ysz"/>
+                                <constraint firstAttribute="trailing" secondItem="SC3-jS-PL4" secondAttribute="trailing" id="NUN-db-GII"/>
+                                <constraint firstItem="SC3-jS-PL4" firstAttribute="leading" secondItem="8vg-kF-KFu" secondAttribute="leading" id="Yea-pJ-7hf"/>
+                                <constraint firstAttribute="bottom" secondItem="SC3-jS-PL4" secondAttribute="bottom" id="dH0-7F-D6L"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j45-2i-HIT" customClass="PTSeparatorView" customModule="Trajilis" customModuleProvider="target">
+                            <rect key="frame" x="100" y="189.5" width="260" height="0.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="cvn-BV-Q8t"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8vg-kF-KFu" secondAttribute="bottom" constant="5" id="9Xm-v3-YPI"/>
+                        <constraint firstItem="8vg-kF-KFu" firstAttribute="top" secondItem="Bfx-vG-7nR" secondAttribute="top" id="LXd-9L-HII"/>
+                        <constraint firstAttribute="bottom" secondItem="j45-2i-HIT" secondAttribute="bottom" id="YPb-db-B14"/>
+                        <constraint firstAttribute="trailing" secondItem="j45-2i-HIT" secondAttribute="trailing" constant="15" id="ZdN-aV-niH"/>
+                        <constraint firstItem="j45-2i-HIT" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="100" id="hXT-uH-zuP"/>
+                        <constraint firstItem="8vg-kF-KFu" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" id="iOs-Hw-kHn"/>
+                        <constraint firstAttribute="trailing" secondItem="8vg-kF-KFu" secondAttribute="trailing" id="ui2-cE-NLV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9lJ-E1-0jp"/>
+                <constraint firstAttribute="bottom" secondItem="Bfx-vG-7nR" secondAttribute="bottom" id="DYF-pG-7eQ"/>
+                <constraint firstAttribute="trailing" secondItem="Bfx-vG-7nR" secondAttribute="trailing" id="P0L-z7-9gi"/>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lg8-o6-JEv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblArrAirport" destination="7jh-z5-KpE" id="3bS-dw-4XT"/>
+                <outlet property="lblArrCity" destination="nbI-59-sB2" id="wf5-xT-f7B"/>
+                <outlet property="lblArrDateTime" destination="fm5-iZ-vCA" id="S96-XP-F1E"/>
+                <outlet property="lblDepAirport" destination="PI9-dC-tbg" id="zH7-2F-nu4"/>
+                <outlet property="lblDepCity" destination="DTl-jN-uI0" id="3Xt-Cn-d5d"/>
+                <outlet property="lblDepDateTime" destination="f3R-sM-NTF" id="jam-Ce-2jk"/>
+                <outlet property="lblDuration" destination="10O-uu-J4k" id="k48-FS-sPX"/>
+                <outlet property="lblFlightNum" destination="O5u-ag-EAO" id="jFC-Od-ADJ"/>
+                <outlet property="lblOperatedBy" destination="FYj-se-YFf" id="Q1o-8L-Lrd"/>
+                <outlet property="stackView" destination="SC3-jS-PL4" id="TFc-fV-K9y"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="116.04197901049476"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,1 @@
+A NodeJS Twitter bot that likes tweets that contain javascript hashtag.

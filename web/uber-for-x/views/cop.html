@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cop <%= userId %> </title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body data-userId="<%= userId %>">
+    <h1>Hello Cop <%= userId %></h1>
+    <h2>Cop details:</h2>
+    <div id="copDetails"></div>
+    <h4 id="notification">
+        <!-- Some info will be displayed here-->
+        Waiting for requests...
+    </h4>
+    <button onclick="helpCitizen()">Help Citizen</button>
+    <div id="map">
+        <!-- We will load a map here later-->
+    </div>
+    <!--Load JavaScripts -->
+    <!-- Load socket.io client library -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Load JQuery from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Load libraries before your JS Code: Write rest of your JS code here. -->
+
+    <script type="text/javascript">
+        var socket = io()
+
+        // Fetch userId from the data-attribute of the body tag
+        var userId = document.body.getAttribute("data-userId")
+
+        /* Fire a 'json' event and send your userId to the server, to join a room - room-name will be userId itself! */
+        socket.emit("join", { userId: userId })
+
+        // declare variables, this will be used later.
+        var requestDetails = {}
+        var copDetails = {}
+        var map, marker
+
+        // First send a GET request using JQuery AJAX and get the cop's details and save it.
+        $.ajax({
+            url: "/cops/info?userId=" + userId,
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                copDetails = data.copDetails
+                copDetails.location = {
+                    address: copDetails.location.address,
+                    longitude: copDetails.location.coordinates[0],
+                    latitude: copDetails.location.coordinates[1],
+                }
+                document.getElementById("copDetails").innerHTML = JSON.stringify(data.copDetails)
+            },
+            error: function (httpRequest, status, error) {
+                console.log(error)
+            }
+        })
+
+        // Listen for a "request-for-help" event
+        socket.on("request-for-help", function (eventData) {
+            // once request is received, do this:
+
+            // save request details
+            requestDetails = eventData
+
+            // display the data received from the event
+            document.getElementById("notification").innerHTML = "Someone's being attacked by a wildling! \n" + JSON.stringify(requestDetails)
+
+            //Show citizen location on the map
+            mapboxgl.marker([
+                requestDetails.location.latitude,
+                requestDetails.location.longitude
+            ], {
+                    icon: L.icon({
+                        iconUrl: "/images/citizen.png",
+                        iconSize: [50, 50]
+                    })
+                }).addTo(map);
+        })
+
+        function helpCitizen() {
+            // Fire a "request-accepted" event/signal and send relevant info back to server
+            socket.emit("request-accepted", {
+                requestDetails: requestDetails,
+                copDetails: copDetails
+            })
+        }
+
+        mapboxgl.accessToken = "pk.eyJ1IjoidG9iaXRlY2giLCJhIjoiY2l3dmcybGh2MDAybjJ6bnU3cDk1NnRhaCJ9.-8IH87TmetC0kVjbGkW-cA";
+        //Load the map and give it a default style
+        map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/tobitech/cjskuccc311m31fnsc8wr3svz',
+            center: [-71.020000, 42.362400],
+            zoom: 10.0
+        });
+        //set it to a cop's lat-lng and zoom level
+        map.setView([copDetails.location.latitude, copDetails.location.longitude], 9);
+        //Display a default marker
+        marker = mapboxgl.marker([copDetails.location.latitude, copDetails.location.longitude]).addTo(map);
+        //This will display an input box
+        map.addControl(mapboxgl.mapbox.geocoderControl("mapbox.places", {
+            autocomplete: true, //will suggest for places as you type
+        }).on("select", function (data) {
+            //This function runs when a place is selected
+            //data contains the geocoding results
+            console.log(data);
+            //Do something with the results
+            //Set the marker to new location
+            marker.setLatLng([
+                data.feature.center[1],
+                data.feature.center[0]
+            ]);
+        }));
+
+    </script>
+</body>
+
+</html>

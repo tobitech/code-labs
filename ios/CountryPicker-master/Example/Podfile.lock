@@ -1,0 +1,16 @@
+PODS:
+  - SKCountryPicker (1.1.7)
+
+DEPENDENCIES:
+  - SKCountryPicker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SKCountryPicker
+
+SPEC CHECKSUMS:
+  SKCountryPicker: 48559297efd40657e03348c78e0df9b129e5c98d
+
+PODFILE CHECKSUM: cbd79d1c657b5b256d60cce55b7ab99db5469282
+
+COCOAPODS: 1.5.2

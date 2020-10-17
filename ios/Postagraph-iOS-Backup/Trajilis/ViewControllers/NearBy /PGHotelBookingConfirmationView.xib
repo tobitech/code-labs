@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="PGHotelBookingConfirmationView" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-vG-7nR" customClass="CardView" customModule="Trajilis" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIcon" translatesAutoresizingMaskIntoConstraints="NO" id="klR-Oh-JSU">
+                            <rect key="frame" x="152.5" y="60" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="ijp-pu-Gim"/>
+                                <constraint firstAttribute="height" constant="70" id="mMY-WU-mWb"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking is confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy8-EM-TEf">
+                            <rect key="frame" x="122" y="145" width="131.5" height="17"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Id:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDB-L1-pJT">
+                            <rect key="frame" x="108" y="177" width="69.5" height="17"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5A-pW-yLb">
+                            <rect key="frame" x="192.5" y="173.5" width="95.5" height="24"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOZ-9L-Rfq">
+                            <rect key="frame" x="84" y="204" width="93.5" height="17"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqw-sj-kZ4">
+                            <rect key="frame" x="192.5" y="200.5" width="95.5" height="24"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="klR-Oh-JSU" firstAttribute="centerX" secondItem="Bfx-vG-7nR" secondAttribute="centerX" id="3gV-Md-92N"/>
+                        <constraint firstItem="eqw-sj-kZ4" firstAttribute="leading" secondItem="cOZ-9L-Rfq" secondAttribute="trailing" constant="15" id="77R-Cb-AXo"/>
+                        <constraint firstItem="cOZ-9L-Rfq" firstAttribute="trailing" secondItem="XDB-L1-pJT" secondAttribute="trailing" id="KYv-FD-eOd"/>
+                        <constraint firstItem="L5A-pW-yLb" firstAttribute="leading" secondItem="XDB-L1-pJT" secondAttribute="trailing" constant="15" id="StP-dt-Aof"/>
+                        <constraint firstAttribute="height" constant="250" id="WGW-Dl-6fy"/>
+                        <constraint firstItem="XDB-L1-pJT" firstAttribute="top" secondItem="gy8-EM-TEf" secondAttribute="bottom" constant="15" id="XBF-le-N4A"/>
+                        <constraint firstAttribute="centerX" secondItem="XDB-L1-pJT" secondAttribute="trailing" constant="10" id="c8z-XT-SEm"/>
+                        <constraint firstItem="gy8-EM-TEf" firstAttribute="top" secondItem="klR-Oh-JSU" secondAttribute="bottom" constant="15" id="ega-cW-RWl"/>
+                        <constraint firstItem="gy8-EM-TEf" firstAttribute="centerX" secondItem="klR-Oh-JSU" secondAttribute="centerX" id="hiy-Z4-wcd"/>
+                        <constraint firstItem="L5A-pW-yLb" firstAttribute="centerY" secondItem="XDB-L1-pJT" secondAttribute="centerY" id="hud-G5-1un"/>
+                        <constraint firstItem="eqw-sj-kZ4" firstAttribute="centerY" secondItem="cOZ-9L-Rfq" secondAttribute="centerY" id="sK7-wv-Exe"/>
+                        <constraint firstItem="klR-Oh-JSU" firstAttribute="top" secondItem="Bfx-vG-7nR" secondAttribute="top" constant="60" id="xi5-Li-DNi"/>
+                        <constraint firstItem="cOZ-9L-Rfq" firstAttribute="top" secondItem="XDB-L1-pJT" secondAttribute="bottom" constant="10" id="y7Z-Kq-p9Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="O6x-KR-DRd"/>
+                <constraint firstAttribute="trailing" secondItem="Bfx-vG-7nR" secondAttribute="trailing" id="Stk-Xd-a9d"/>
+                <constraint firstAttribute="bottom" secondItem="Bfx-vG-7nR" secondAttribute="bottom" id="c9q-v8-yun"/>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eie-ER-08T"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView1" destination="klR-Oh-JSU" id="7cX-f0-8kz"/>
+                <outlet property="lblBookingID" destination="L5A-pW-yLb" id="jaw-4M-mrG"/>
+                <outlet property="lblBookingStatus" destination="gy8-EM-TEf" id="gSw-uB-Af0"/>
+                <outlet property="lblOrderNumber" destination="eqw-sj-kZ4" id="EFW-qW-riX"/>
+                <outlet property="viewCard" destination="Bfx-vG-7nR" id="Ny9-Z1-cw9"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="198.35082458770617"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="successIcon" width="160" height="160"/>
+    </resources>
+</document>

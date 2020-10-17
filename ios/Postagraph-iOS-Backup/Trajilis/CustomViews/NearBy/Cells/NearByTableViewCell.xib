@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoe-ui-semibold.ttf">
+            <string>SegoeUI-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="NearByTableViewCell" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyq-Nq-O4M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IcD-KK-5na">
+                                <rect key="frame" x="10" y="0.0" width="100" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="K7u-lZ-CYG"/>
+                                    <constraint firstAttribute="height" constant="110" id="nCw-LF-e7L"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oklah Bird Santuary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-ja-aqg">
+                                <rect key="frame" x="130" y="10" width="125.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-SemiBold" family="Segoe UI" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Park" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2z-qq-pLK">
+                                <rect key="frame" x="130" y="36.5" width="24.5" height="14"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-SemiBold" family="Segoe UI" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.45 miles" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoF-Zn-aan">
+                                <rect key="frame" x="130" y="50.5" width="55" height="14"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-SemiBold" family="Segoe UI" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2y-Wd-bK8" customClass="PARateView" customModule="Trajilis" customModuleProvider="target">
+                                <rect key="frame" x="130" y="80.5" width="170" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Mdt-yO-56N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W2z-qq-pLK" firstAttribute="leading" secondItem="IcD-KK-5na" secondAttribute="trailing" constant="20" id="8pl-WP-Ec9"/>
+                            <constraint firstItem="yqC-ja-aqg" firstAttribute="top" secondItem="Fyq-Nq-O4M" secondAttribute="top" constant="10" id="AY5-Nn-Rex"/>
+                            <constraint firstItem="yqC-ja-aqg" firstAttribute="leading" secondItem="IcD-KK-5na" secondAttribute="trailing" constant="20" id="BoE-rw-zsh"/>
+                            <constraint firstItem="IcD-KK-5na" firstAttribute="leading" secondItem="Fyq-Nq-O4M" secondAttribute="leading" constant="10" id="J90-QA-amW"/>
+                            <constraint firstItem="W2z-qq-pLK" firstAttribute="top" secondItem="yqC-ja-aqg" secondAttribute="bottom" constant="10" id="JLn-wM-GES"/>
+                            <constraint firstAttribute="trailing" secondItem="C2y-Wd-bK8" secondAttribute="trailing" constant="20" id="N4n-7V-SgT"/>
+                            <constraint firstItem="aoF-Zn-aan" firstAttribute="top" secondItem="W2z-qq-pLK" secondAttribute="bottom" id="SyT-ar-h6k"/>
+                            <constraint firstAttribute="bottom" secondItem="C2y-Wd-bK8" secondAttribute="bottom" constant="10" id="YCG-TR-9dJ"/>
+                            <constraint firstItem="C2y-Wd-bK8" firstAttribute="leading" secondItem="IcD-KK-5na" secondAttribute="trailing" constant="20" id="jy8-Nh-a9Q"/>
+                            <constraint firstItem="IcD-KK-5na" firstAttribute="top" secondItem="Fyq-Nq-O4M" secondAttribute="top" id="ub7-Sz-43f"/>
+                            <constraint firstItem="aoF-Zn-aan" firstAttribute="leading" secondItem="IcD-KK-5na" secondAttribute="trailing" constant="20" id="und-rW-rpf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Fyq-Nq-O4M" secondAttribute="trailing" id="JwL-Qm-wJS"/>
+                    <constraint firstItem="Fyq-Nq-O4M" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TbD-H5-wAK"/>
+                    <constraint firstItem="Fyq-Nq-O4M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jZx-BY-ekO"/>
+                    <constraint firstItem="Fyq-Nq-O4M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zag-Ve-juK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="129.59999999999999" y="125.4872563718141"/>
+        </tableViewCell>
+    </objects>
+</document>

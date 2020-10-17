@@ -1,0 +1,16 @@
+*.xcuserdatad
+.idea
+
+# Eclipse files
+.buildpath
+.project
+.settings/
+
+# MACOS files
+.DS_Store
+
+build
+
+# Swift package manager
+.build
+

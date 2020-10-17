@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrajilisImageView" customModule="Trajilis" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="jGZ-PA-emR"/>
+                <outlet property="imageContainerView" destination="DVP-32-cMM" id="BaF-7j-Xzg"/>
+                <outlet property="imageView" destination="Rka-DE-d1h" id="8Ki-MB-JVe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="108"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVP-32-cMM">
+                    <rect key="frame" x="8" y="8" width="103" height="92"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-DE-d1h">
+                            <rect key="frame" x="0.0" y="0.0" width="103" height="92"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Rka-DE-d1h" firstAttribute="leading" secondItem="DVP-32-cMM" secondAttribute="leading" id="3gO-KU-XRT"/>
+                        <constraint firstAttribute="trailing" secondItem="Rka-DE-d1h" secondAttribute="trailing" id="pRm-8g-xHL"/>
+                        <constraint firstAttribute="bottom" secondItem="Rka-DE-d1h" secondAttribute="bottom" id="ude-Dk-nbx"/>
+                        <constraint firstItem="Rka-DE-d1h" firstAttribute="top" secondItem="DVP-32-cMM" secondAttribute="top" id="wlt-lf-jKa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DVP-32-cMM" secondAttribute="trailing" constant="8" id="DOo-ko-0yb"/>
+                <constraint firstItem="DVP-32-cMM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="SHf-mT-aLY"/>
+                <constraint firstItem="DVP-32-cMM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ZGT-jB-2yd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DVP-32-cMM" secondAttribute="bottom" constant="8" id="px9-oc-BJi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-66.400000000000006" y="188.00599700149925"/>
+        </view>
+    </objects>
+</document>

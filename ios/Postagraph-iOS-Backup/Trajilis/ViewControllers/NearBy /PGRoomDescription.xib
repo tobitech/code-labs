@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PTSans-Bold.ttf">
+            <string>PTSans-Bold</string>
+        </array>
+        <array key="PTSans-Regular.ttf">
+            <string>PTSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="PGRoomDescription" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-vG-7nR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Room" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPf-lY-dyK">
+                            <rect key="frame" x="15" y="15" width="102" height="21"/>
+                            <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbt-kc-L0E">
+                            <rect key="frame" x="360" y="25.5" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j45-2i-HIT">
+                            <rect key="frame" x="15" y="263.5" width="345" height="8"/>
+                            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="8" id="cvn-BV-Q8t"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSk-qZ-Wzi">
+                            <rect key="frame" x="266" y="9" width="94" height="33"/>
+                            <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="16"/>
+                            <state key="normal" title="Change Room">
+                                <color key="titleColor" red="0.83921568629999999" green="0.23921568630000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNW-XC-kFJ">
+                            <rect key="frame" x="16" y="60" width="343" height="150"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advanced Saver Standard Room" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PP6-DM-KIL">
+                                    <rect key="frame" x="16" y="16" width="216.5" height="21"/>
+                                    <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="16"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JW8-Po-JFB">
+                                    <rect key="frame" x="16" y="53" width="34.5" height="26"/>
+                                    <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="20"/>
+                                    <color key="textColor" red="0.83921568629999999" green="0.23921568630000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3P-hL-NJu">
+                                    <rect key="frame" x="16" y="95" width="312" height="16"/>
+                                    <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ per night" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aws-jU-VLM">
+                                    <rect key="frame" x="55.5" y="58" width="54.5" height="16"/>
+                                    <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="Aws-jU-VLM" firstAttribute="centerY" secondItem="JW8-Po-JFB" secondAttribute="centerY" id="Ezr-o4-7qg"/>
+                                <constraint firstAttribute="height" constant="150" id="Mbf-xr-iYH"/>
+                                <constraint firstItem="JW8-Po-JFB" firstAttribute="top" secondItem="PP6-DM-KIL" secondAttribute="bottom" constant="16" id="PmT-To-mK5"/>
+                                <constraint firstItem="A3P-hL-NJu" firstAttribute="leading" secondItem="jNW-XC-kFJ" secondAttribute="leading" constant="16" id="SZw-BH-8x8"/>
+                                <constraint firstAttribute="trailing" secondItem="A3P-hL-NJu" secondAttribute="trailing" constant="15" id="Xwc-ZV-DMx"/>
+                                <constraint firstItem="A3P-hL-NJu" firstAttribute="top" secondItem="JW8-Po-JFB" secondAttribute="bottom" constant="16" id="Yft-Zb-oia"/>
+                                <constraint firstItem="PP6-DM-KIL" firstAttribute="top" secondItem="jNW-XC-kFJ" secondAttribute="top" constant="16" id="fYb-oR-XE3"/>
+                                <constraint firstItem="JW8-Po-JFB" firstAttribute="leading" secondItem="jNW-XC-kFJ" secondAttribute="leading" constant="16" id="hl6-56-mll"/>
+                                <constraint firstItem="PP6-DM-KIL" firstAttribute="leading" secondItem="jNW-XC-kFJ" secondAttribute="leading" constant="16" id="wk9-eH-1qM"/>
+                                <constraint firstItem="Aws-jU-VLM" firstAttribute="leading" secondItem="JW8-Po-JFB" secondAttribute="trailing" constant="5" id="xHy-Gk-0nC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="nSk-qZ-Wzi" firstAttribute="centerY" secondItem="gPf-lY-dyK" secondAttribute="centerY" id="04C-kE-2ie"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gPf-lY-dyK" secondAttribute="trailing" constant="10" id="4k0-2b-RTg"/>
+                        <constraint firstItem="jNW-XC-kFJ" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="16" id="9HY-Oy-azl"/>
+                        <constraint firstItem="j45-2i-HIT" firstAttribute="top" secondItem="jNW-XC-kFJ" secondAttribute="bottom" constant="53.5" id="E6E-G1-2w7"/>
+                        <constraint firstAttribute="trailing" secondItem="jNW-XC-kFJ" secondAttribute="trailing" constant="16" id="Sw0-WB-cWD"/>
+                        <constraint firstItem="Hbt-kc-L0E" firstAttribute="centerY" secondItem="gPf-lY-dyK" secondAttribute="centerY" id="TgO-uh-EJn"/>
+                        <constraint firstAttribute="bottom" secondItem="j45-2i-HIT" secondAttribute="bottom" id="YPb-db-B14"/>
+                        <constraint firstAttribute="trailing" secondItem="j45-2i-HIT" secondAttribute="trailing" constant="15" id="ZdN-aV-niH"/>
+                        <constraint firstAttribute="trailing" secondItem="nSk-qZ-Wzi" secondAttribute="trailing" constant="15" id="aEP-16-fC9"/>
+                        <constraint firstItem="jNW-XC-kFJ" firstAttribute="top" secondItem="gPf-lY-dyK" secondAttribute="bottom" constant="24" id="fGw-Rw-64j"/>
+                        <constraint firstAttribute="trailing" secondItem="Hbt-kc-L0E" secondAttribute="trailing" constant="15" id="fJz-5d-BlT"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="15" id="g7C-Nd-fXh"/>
+                        <constraint firstItem="j45-2i-HIT" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="15" id="hXT-uH-zuP"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="top" secondItem="Bfx-vG-7nR" secondAttribute="top" constant="15" id="sUd-gy-dMa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9lJ-E1-0jp"/>
+                <constraint firstAttribute="bottom" secondItem="Bfx-vG-7nR" secondAttribute="bottom" id="DYF-pG-7eQ"/>
+                <constraint firstAttribute="trailing" secondItem="Bfx-vG-7nR" secondAttribute="trailing" id="P0L-z7-9gi"/>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lg8-o6-JEv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnChange" destination="nSk-qZ-Wzi" id="730-Bs-ilz"/>
+                <outlet property="lblDesc" destination="A3P-hL-NJu" id="hr1-NY-tqQ"/>
+                <outlet property="lblPrice" destination="JW8-Po-JFB" id="jQL-l4-v0C"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="116.49175412293854"/>
+        </view>
+    </objects>
+</document>

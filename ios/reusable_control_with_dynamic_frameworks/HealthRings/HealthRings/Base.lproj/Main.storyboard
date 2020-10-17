@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AlK-wI-sPL">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hny-er-EgN">
+            <objects>
+                <viewController id="AlK-wI-sPL" customClass="ViewController" customModule="HealthRings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QCC-C7-jPQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3yT-jc-mgy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YFH-Kj-ET2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tEA-cw-HYB">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OQU-h5-j4X">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrt-vu-vwb">
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.97241950759999995" green="0.97241950759999995" blue="0.97241950759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="hvW-d2-uaL">
+                                                <rect key="frame" x="68.5" y="0.0" width="276.5" height="31"/>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="SfA-Iw-tfh" customClass="ThreeRingView" customModule="ThreeRingControl">
+                                        <rect key="frame" x="0.0" y="35" width="343" height="366"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ringWidth">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ringPadding">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="outerRingValue">
+                                                <real key="value" value="2.2999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="middleRingValue">
+                                                <real key="value" value="0.80000000000000004"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="innerRingValue">
+                                                <real key="value" value="1.1000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="innerRingColor">
+                                                <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="middleRingColor">
+                                                <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outerRingColor">
+                                                <color key="value" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="SOS-51-IB5">
+                                        <rect key="frame" x="0.0" y="406" width="343" height="261"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-Rr-owP">
+                                                <rect key="frame" x="0.0" y="83.5" width="288" height="94"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="A5J-lB-pgP">
+                                                        <rect key="frame" x="-2" y="0.0" width="292" height="31"/>
+                                                    </slider>
+                                                    <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.80000001192092896" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="TqI-oJ-2eu">
+                                                        <rect key="frame" x="-2" y="32" width="292" height="31"/>
+                                                    </slider>
+                                                    <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2.2999999523162842" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="BdJ-jn-eM1">
+                                                        <rect key="frame" x="-2" y="64" width="292" height="31"/>
+                                                    </slider>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jBF-3N-Nr4">
+                                                <rect key="frame" x="292" y="95" width="51" height="71"/>
+                                                <subviews>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rws-7j-WF8">
+                                                        <rect key="frame" x="1" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" red="0.41862171889999999" green="0.68887752290000004" blue="0.99388754369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </switch>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OR-pb-0BF">
+                                                        <rect key="frame" x="0.0" y="41" width="51" height="30"/>
+                                                        <color key="backgroundColor" red="0.41862171889999999" green="0.68887752290000004" blue="0.99388754369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.97241950759999995" green="0.97241950759999995" blue="0.97241950759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Update"/>
+                                                        <connections>
+                                                            <action selector="handleUpdateButtonTapped" destination="AlK-wI-sPL" eventType="touchUpInside" id="Aef-xd-MMl"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="tintColor" red="0.41862171889999999" green="0.68887752290000004" blue="0.99388754369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.41862171889999999" green="0.68887752290000004" blue="0.99388754369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3yT-jc-mgy" firstAttribute="top" secondItem="tEA-cw-HYB" secondAttribute="bottom" id="4Y6-LM-nkn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tEA-cw-HYB" secondAttribute="trailing" id="8AU-NW-1iB"/>
+                            <constraint firstItem="tEA-cw-HYB" firstAttribute="leading" secondItem="YFH-Kj-ET2" secondAttribute="leadingMargin" id="IPH-Iw-sGa"/>
+                            <constraint firstItem="tEA-cw-HYB" firstAttribute="top" secondItem="QCC-C7-jPQ" secondAttribute="bottom" id="uwe-hU-XXT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3kX-YO-BT1"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationEnabledSwitch" destination="Rws-7j-WF8" id="BZy-EL-WIe"/>
+                        <outlet property="durationSlider" destination="hvW-d2-uaL" id="EUw-Ad-dRs"/>
+                        <outlet property="threeRingView" destination="SfA-Iw-tfh" id="XRC-my-cOU"/>
+                        <outletCollection property="valueSliders" destination="A5J-lB-pgP" collectionClass="NSMutableArray" id="UFh-R2-9ft"/>
+                        <outletCollection property="valueSliders" destination="TqI-oJ-2eu" collectionClass="NSMutableArray" id="soI-4k-X6V"/>
+                        <outletCollection property="valueSliders" destination="BdJ-jn-eM1" collectionClass="NSMutableArray" id="rfx-bP-lbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaQ-R8-1VI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="387"/>
+        </scene>
+    </scenes>
+</document>

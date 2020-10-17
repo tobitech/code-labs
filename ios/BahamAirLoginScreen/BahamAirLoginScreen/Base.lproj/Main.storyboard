@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ool-XX-4KA">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uiP-av-wPr">
+            <objects>
+                <viewController id="ool-XX-4KA" customClass="ViewController" customModule="BahamAirLoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gmc-MZ-Qia"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uwi-PC-5wZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X7E-od-b0f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-sunny" translatesAutoresizingMaskIntoConstraints="NO" id="8Ng-b4-mIg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-sunny-cloud-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fhr-1E-HGc">
+                                <rect key="frame" x="-32.5" y="58.5" width="159" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fhr-1E-HGc" secondAttribute="height" multiplier="159:50" id="2IU-R1-2qU"/>
+                                    <constraint firstAttribute="height" constant="50" id="WK1-al-yuR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-sunny-cloud-2" translatesAutoresizingMaskIntoConstraints="NO" id="32W-IS-Z76">
+                                <rect key="frame" x="230.5" y="159" width="158" height="49.000000000000014"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="8wV-Vf-iab"/>
+                                    <constraint firstAttribute="width" secondItem="32W-IS-Z76" secondAttribute="height" multiplier="158:49" id="jYV-4f-0Eo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-sunny-cloud-3" translatesAutoresizingMaskIntoConstraints="NO" id="9vK-9I-eYN">
+                                <rect key="frame" x="263" y="316" width="74" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4yf-82-XST"/>
+                                    <constraint firstAttribute="width" secondItem="9vK-9I-eYN" secondAttribute="height" multiplier="74:35" id="NaL-QH-D1K"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-sunny-cloud-4" translatesAutoresizingMaskIntoConstraints="NO" id="ohm-PL-Jwe">
+                                <rect key="frame" x="-1.5" y="408.5" width="115.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XEZ-wk-te1"/>
+                                    <constraint firstAttribute="width" secondItem="ohm-PL-Jwe" secondAttribute="height" multiplier="23:10" id="YJR-kj-IjF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bahama Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dev-my-Ayw">
+                                <rect key="frame" x="96" y="116.5" width="183" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dev-my-Ayw" secondAttribute="height" multiplier="183:34" id="Ubb-KE-ODe"/>
+                                    <constraint firstAttribute="height" constant="34" id="pSQ-GR-xwT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P5a-4M-LYl">
+                                <rect key="frame" x="67.5" y="192" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EJu-f5-hFI"/>
+                                    <constraint firstAttribute="width" secondItem="P5a-4M-LYl" secondAttribute="height" multiplier="8:1" id="v8A-W6-med"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwh-cr-toi">
+                                <rect key="frame" x="67.5" y="235" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gwh-cr-toi" secondAttribute="height" multiplier="8:1" id="UnW-hD-sgx"/>
+                                    <constraint firstAttribute="height" constant="30" id="huc-t5-8DM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="light" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mi-sp-Ldk">
+                                <rect key="frame" x="87.5" y="341" width="200" height="52"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.83921568629999999" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6mi-sp-Ldk" secondAttribute="height" multiplier="50:13" id="34J-FD-5Zs"/>
+                                    <constraint firstAttribute="height" constant="52" id="4d7-UO-uSW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
+                                <color key="tintColor" red="0.0" green="0.40784313729999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="login" destination="ool-XX-4KA" eventType="touchUpInside" id="Rda-vM-Zsn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P5a-4M-LYl" firstAttribute="centerX" secondItem="X7E-od-b0f" secondAttribute="centerX" id="58W-ir-p8m"/>
+                            <constraint firstItem="6mi-sp-Ldk" firstAttribute="centerX" secondItem="X7E-od-b0f" secondAttribute="centerX" id="9LB-jp-8bc"/>
+                            <constraint firstItem="Fhr-1E-HGc" firstAttribute="centerX" secondItem="X7E-od-b0f" secondAttribute="centerX" multiplier="0.25" id="DhO-aA-czF"/>
+                            <constraint firstItem="6mi-sp-Ldk" firstAttribute="centerY" secondItem="X7E-od-b0f" secondAttribute="centerY" multiplier="1.1" id="EU7-vJ-Q2s"/>
+                            <constraint firstItem="dev-my-Ayw" firstAttribute="centerX" secondItem="X7E-od-b0f" secondAttribute="centerX" id="Ede-jw-Atw"/>
+                            <constraint firstItem="9vK-9I-eYN" firstAttribute="centerX" secondItem="X7E-od-b0f" secondAttribute="centerX" multiplier="1.6" id="PcW-ZS-hvr"/>
+                            <constraint firstItem="dev-my-Ayw" firstAttribute="centerY" secondItem="X7E-od-b0f" secondAttribute="centerY" multiplier="0.4" id="XzV-HU-8IP"/>
+                            <constraint firstItem="ohm-PL-Jwe" firstAttribute="centerY" secondItem="X7E-od-b0f" secondAttribute="centerY" multiplier="1.3" id="bE8-rV-9AU"/>
+                            <constraint firstItem="P5a-4M-LYl" firstAttribute="centerY" secondItem="X7E-od-b0f" secondAttribute="centerY" multiplier="0.62" id="fmv-2u-74i"/>
+                            <constraint firstItem="9vK-9I-eYN" firstAttribute="centerY" secondItem="X7E-od-b0f" secondAttribute="centerY" id="gW6-y5-qYP"/>
+                            <constraint firstItem="gwh-cr-toi" firstAttribute="centerY" secondItem="X7E-od-b0f" secondAttribute="centerY" multiplier="0.75" id="iUd-wb-DBC"/>
+                            <constraint firstItem="32W-IS-Z76" firstAttribute="centerX" secondItem="X7E-od-b0f" secondAttribute="centerX" multiplier="1.65" id="kes-9W-Pgw"/>
+                            <constraint firstItem="gwh-cr-toi" firstAttribute="centerX" secondItem="X7E-od-b0f" secondAttribute="centerX" id="p25-QF-qZ7"/>
+                            <constraint firstItem="Fhr-1E-HGc" firstAttribute="centerY" secondItem="X7E-od-b0f" secondAttribute="centerY" multiplier="0.25" id="rPq-fR-J7h"/>
+                            <constraint firstItem="ohm-PL-Jwe" firstAttribute="centerX" secondItem="X7E-od-b0f" secondAttribute="centerX" multiplier="0.3" id="u7f-WW-DSa"/>
+                            <constraint firstItem="32W-IS-Z76" firstAttribute="centerY" secondItem="X7E-od-b0f" secondAttribute="centerY" multiplier="0.55" id="wQp-Dd-RqQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jQk-FZ-ZXA"/>
+                    </view>
+                    <connections>
+                        <outlet property="cloud1" destination="Fhr-1E-HGc" id="yCy-uK-V3x"/>
+                        <outlet property="cloud2" destination="32W-IS-Z76" id="kRA-kT-d3v"/>
+                        <outlet property="cloud3" destination="9vK-9I-eYN" id="HU9-qj-A20"/>
+                        <outlet property="cloud4" destination="ohm-PL-Jwe" id="BOb-rZ-SLx"/>
+                        <outlet property="heading" destination="dev-my-Ayw" id="yvc-kV-KmQ"/>
+                        <outlet property="loginButton" destination="6mi-sp-Ldk" id="9yL-5a-kwA"/>
+                        <outlet property="password" destination="gwh-cr-toi" id="uRJ-KW-4kf"/>
+                        <outlet property="username" destination="P5a-4M-LYl" id="uxg-pj-qC4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLw-0O-WHr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262.80193236714979" y="245.33035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-sunny" width="320" height="568"/>
+        <image name="bg-sunny-cloud-1" width="159" height="50"/>
+        <image name="bg-sunny-cloud-2" width="138" height="49"/>
+        <image name="bg-sunny-cloud-3" width="74" height="35"/>
+        <image name="bg-sunny-cloud-4" width="115" height="50"/>
+    </resources>
+</document>

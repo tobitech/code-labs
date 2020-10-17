@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="PGFlightItineraryView" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-vG-7nR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fIS-0Q-ng2">
+                            <rect key="frame" x="15" y="13.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="A8h-Ug-eso"/>
+                                <constraint firstAttribute="height" constant="20" id="qps-mz-b5J"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operating Com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPf-lY-dyK">
+                            <rect key="frame" x="40" y="15" width="95.5" height="17"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vg-kF-KFu">
+                            <rect key="frame" x="0.0" y="42" width="375" height="220"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SC3-jS-PL4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="SC3-jS-PL4" firstAttribute="top" secondItem="8vg-kF-KFu" secondAttribute="top" id="KyO-F9-ysz"/>
+                                <constraint firstAttribute="trailing" secondItem="SC3-jS-PL4" secondAttribute="trailing" id="NUN-db-GII"/>
+                                <constraint firstItem="SC3-jS-PL4" firstAttribute="leading" secondItem="8vg-kF-KFu" secondAttribute="leading" id="Yea-pJ-7hf"/>
+                                <constraint firstAttribute="bottom" secondItem="SC3-jS-PL4" secondAttribute="bottom" id="dH0-7F-D6L"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j45-2i-HIT" customClass="PTSeparatorView" customModule="Trajilis" customModuleProvider="target">
+                            <rect key="frame" x="15" y="42" width="345" height="0.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="cvn-BV-Q8t"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8vg-kF-KFu" firstAttribute="top" secondItem="gPf-lY-dyK" secondAttribute="bottom" constant="10" id="0gC-A7-i48"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gPf-lY-dyK" secondAttribute="trailing" constant="10" id="4k0-2b-RTg"/>
+                        <constraint firstItem="j45-2i-HIT" firstAttribute="top" secondItem="8vg-kF-KFu" secondAttribute="top" id="5oc-Ge-oMR"/>
+                        <constraint firstAttribute="bottom" secondItem="8vg-kF-KFu" secondAttribute="bottom" constant="5" id="9Xm-v3-YPI"/>
+                        <constraint firstItem="fIS-0Q-ng2" firstAttribute="centerY" secondItem="gPf-lY-dyK" secondAttribute="centerY" id="GyJ-3t-Nha"/>
+                        <constraint firstAttribute="trailing" secondItem="j45-2i-HIT" secondAttribute="trailing" constant="15" id="ZdN-aV-niH"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="leading" secondItem="fIS-0Q-ng2" secondAttribute="trailing" constant="5" id="dle-t3-fCC"/>
+                        <constraint firstItem="j45-2i-HIT" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="15" id="hXT-uH-zuP"/>
+                        <constraint firstItem="8vg-kF-KFu" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" id="iOs-Hw-kHn"/>
+                        <constraint firstItem="fIS-0Q-ng2" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="15" id="nDw-iE-Djd"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="top" secondItem="Bfx-vG-7nR" secondAttribute="top" constant="15" id="sUd-gy-dMa"/>
+                        <constraint firstAttribute="trailing" secondItem="8vg-kF-KFu" secondAttribute="trailing" id="ui2-cE-NLV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9lJ-E1-0jp"/>
+                <constraint firstAttribute="bottom" secondItem="Bfx-vG-7nR" secondAttribute="bottom" id="DYF-pG-7eQ"/>
+                <constraint firstAttribute="trailing" secondItem="Bfx-vG-7nR" secondAttribute="trailing" id="P0L-z7-9gi"/>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lg8-o6-JEv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView" destination="fIS-0Q-ng2" id="e1r-ow-Qhr"/>
+                <outlet property="lblTitle" destination="gPf-lY-dyK" id="iOV-nX-4yw"/>
+                <outlet property="stackView" destination="SC3-jS-PL4" id="TFc-fV-K9y"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="116.49175412293854"/>
+        </view>
+    </objects>
+</document>

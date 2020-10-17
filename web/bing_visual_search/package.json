@@ -1,0 +1,17 @@
+{
+  "name": "bing_visual_search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "azure-cognitiveservices-visualsearch": "^2.0.0",
+    "ms-rest-azure": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tobi Omotayo",
+  "license": "ISC"
+}

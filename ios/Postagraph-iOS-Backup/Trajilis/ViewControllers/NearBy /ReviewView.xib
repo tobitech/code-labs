@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReviewView" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-vG-7nR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vzu-Jp-eCl">
+                            <rect key="frame" x="15" y="15" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Hau-aQ-ECA"/>
+                                <constraint firstAttribute="height" constant="40" id="lin-DJ-ty0"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVIEWS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPf-lY-dyK">
+                            <rect key="frame" x="60" y="15" width="65" height="18"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Srp-Q7-YyT" customClass="CosmosView" customModule="Cosmos">
+                            <rect key="frame" x="60" y="33" width="266" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="vu1-az-zTA"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                    <color key="value" red="0.78039215689999997" green="0.031372549020000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                    <color key="value" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                    <color key="value" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2Z-SX-t1A">
+                            <rect key="frame" x="15" y="65" width="350" height="192"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <color key="textColor" white="0.57861551089999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVIEWS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-Tj-sMh">
+                            <rect key="frame" x="308.5" y="16" width="56.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="c2Z-SX-t1A" firstAttribute="leading" secondItem="Vzu-Jp-eCl" secondAttribute="leading" id="5tz-5f-uZh"/>
+                        <constraint firstItem="Vzu-Jp-eCl" firstAttribute="leading" secondItem="Bfx-vG-7nR" secondAttribute="leading" constant="15" id="8Hl-Qc-vgw"/>
+                        <constraint firstAttribute="bottom" secondItem="c2Z-SX-t1A" secondAttribute="bottom" constant="10" id="DpX-ph-RPg"/>
+                        <constraint firstAttribute="trailing" secondItem="c2Z-SX-t1A" secondAttribute="trailing" constant="10" id="ElD-fl-RCD"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="top" secondItem="Vzu-Jp-eCl" secondAttribute="top" id="Q3d-9T-msu"/>
+                        <constraint firstItem="ffa-Tj-sMh" firstAttribute="centerY" secondItem="gPf-lY-dyK" secondAttribute="centerY" id="Rj6-M5-3xO"/>
+                        <constraint firstItem="Srp-Q7-YyT" firstAttribute="top" secondItem="gPf-lY-dyK" secondAttribute="bottom" id="VPq-Xz-sN1"/>
+                        <constraint firstItem="gPf-lY-dyK" firstAttribute="leading" secondItem="Vzu-Jp-eCl" secondAttribute="trailing" constant="5" id="bgu-dE-WGO"/>
+                        <constraint firstAttribute="trailing" secondItem="ffa-Tj-sMh" secondAttribute="trailing" constant="10" id="bhp-wb-zhs"/>
+                        <constraint firstItem="Vzu-Jp-eCl" firstAttribute="top" secondItem="Bfx-vG-7nR" secondAttribute="top" constant="15" id="dkB-qa-Znq"/>
+                        <constraint firstItem="Srp-Q7-YyT" firstAttribute="leading" secondItem="gPf-lY-dyK" secondAttribute="leading" id="g1U-wy-zr8"/>
+                        <constraint firstItem="c2Z-SX-t1A" firstAttribute="top" secondItem="Vzu-Jp-eCl" secondAttribute="bottom" constant="10" id="v8r-1D-qYv"/>
+                        <constraint firstAttribute="trailing" secondItem="Srp-Q7-YyT" secondAttribute="trailing" constant="49" id="z1A-nr-cmH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9lJ-E1-0jp"/>
+                <constraint firstAttribute="bottom" secondItem="Bfx-vG-7nR" secondAttribute="bottom" id="DYF-pG-7eQ"/>
+                <constraint firstAttribute="trailing" secondItem="Bfx-vG-7nR" secondAttribute="trailing" id="P0L-z7-9gi"/>
+                <constraint firstItem="Bfx-vG-7nR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lg8-o6-JEv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView" destination="Vzu-Jp-eCl" id="k6t-xX-3hL"/>
+                <outlet property="lblName" destination="gPf-lY-dyK" id="ieT-8q-CJo"/>
+                <outlet property="lblReview" destination="c2Z-SX-t1A" id="Fg7-Ol-IL9"/>
+                <outlet property="lblTime" destination="ffa-Tj-sMh" id="pha-lI-lDX"/>
+                <outlet property="ratingView" destination="Srp-Q7-YyT" id="mgE-rY-44S"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="116.49175412293854"/>
+        </view>
+    </objects>
+</document>

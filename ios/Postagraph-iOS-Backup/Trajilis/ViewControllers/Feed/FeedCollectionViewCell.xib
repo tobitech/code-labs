@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FeedCollectionViewCell" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="511"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="511"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nST-Lo-cgg">
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="511"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irF-tX-PwR" customClass="AVPlayerView" customModule="Trajilis" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="511"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="irF-tX-PwR" secondAttribute="bottom" id="3CU-4Q-M4e"/>
+                <constraint firstItem="nST-Lo-cgg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MCO-JN-FAF"/>
+                <constraint firstItem="irF-tX-PwR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NPE-r7-nnM"/>
+                <constraint firstItem="nST-Lo-cgg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rqz-2J-RRy"/>
+                <constraint firstAttribute="trailing" secondItem="nST-Lo-cgg" secondAttribute="trailing" id="b2F-3W-wUh"/>
+                <constraint firstItem="irF-tX-PwR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dAt-lP-QjK"/>
+                <constraint firstAttribute="trailing" secondItem="irF-tX-PwR" secondAttribute="trailing" id="vPU-Nl-4up"/>
+                <constraint firstAttribute="bottom" secondItem="nST-Lo-cgg" secondAttribute="bottom" id="vsQ-If-3Zm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="290" height="511"/>
+            <connections>
+                <outlet property="feedImageView" destination="nST-Lo-cgg" id="V5p-jL-dAz"/>
+                <outlet property="videoView" destination="irF-tX-PwR" id="zxf-I6-R5u"/>
+            </connections>
+            <point key="canvasLocation" x="162.31884057971016" y="81.361607142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>

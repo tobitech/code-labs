@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="PTSans-Bold.ttf">
+            <string>PTSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="589" id="KGk-i7-Jjw" customClass="FlightOptionsTVCell" customModule="Trajilis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Faz-dD-v4c">
+                        <rect key="frame" x="16" y="20" width="389" height="259.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Economy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-Cu-Dk9">
+                                <rect key="frame" x="16" y="16" width="126" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0FB-bf-44E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="per ticket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKB-0E-Qyc">
+                                <rect key="frame" x="69.5" y="68" width="50" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.20392156859999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$919" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5va-LG-Ynh">
+                                <rect key="frame" x="16" y="62" width="45.5" height="26"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="20"/>
+                                <color key="textColor" red="0.81960784310000001" green="0.098039215690000001" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_icon" translatesAutoresizingMaskIntoConstraints="NO" id="o8c-Ru-Fiy">
+                                <rect key="frame" x="351" y="61.5" width="27" height="27"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="NXb-bW-xYa"/>
+                                    <constraint firstAttribute="height" constant="27" id="PwY-vY-nKd"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="20U-gL-Ijs">
+                                <rect key="frame" x="16" y="104.5" width="357" height="139"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uFH-KU-dqR">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5va-LG-Ynh" firstAttribute="top" secondItem="fXR-Cu-Dk9" secondAttribute="bottom" constant="16" id="0HA-T4-HoL"/>
+                            <constraint firstItem="20U-gL-Ijs" firstAttribute="leading" secondItem="Faz-dD-v4c" secondAttribute="leading" constant="16" id="0ee-oj-ipf"/>
+                            <constraint firstItem="fXR-Cu-Dk9" firstAttribute="top" secondItem="Faz-dD-v4c" secondAttribute="top" constant="16" id="9mQ-2g-Fp8"/>
+                            <constraint firstAttribute="trailing" secondItem="20U-gL-Ijs" secondAttribute="trailing" constant="16" id="Bnj-Mh-a50"/>
+                            <constraint firstAttribute="bottom" secondItem="20U-gL-Ijs" secondAttribute="bottom" constant="16" id="Cff-Q8-sYL"/>
+                            <constraint firstItem="fXR-Cu-Dk9" firstAttribute="leading" secondItem="Faz-dD-v4c" secondAttribute="leading" constant="16" id="IK6-nf-Ki7"/>
+                            <constraint firstAttribute="trailing" secondItem="o8c-Ru-Fiy" secondAttribute="trailing" constant="11" id="M4L-ft-gra"/>
+                            <constraint firstItem="5va-LG-Ynh" firstAttribute="leading" secondItem="Faz-dD-v4c" secondAttribute="leading" constant="16" id="OLE-X8-2Yk"/>
+                            <constraint firstItem="20U-gL-Ijs" firstAttribute="top" secondItem="o8c-Ru-Fiy" secondAttribute="bottom" constant="16" id="aik-Wk-Vha"/>
+                            <constraint firstItem="pKB-0E-Qyc" firstAttribute="centerY" secondItem="5va-LG-Ynh" secondAttribute="centerY" id="dAh-sn-D7t"/>
+                            <constraint firstItem="o8c-Ru-Fiy" firstAttribute="centerY" secondItem="5va-LG-Ynh" secondAttribute="centerY" id="uFD-16-Sxd"/>
+                            <constraint firstItem="pKB-0E-Qyc" firstAttribute="leading" secondItem="5va-LG-Ynh" secondAttribute="trailing" constant="8" id="uVt-3d-LRZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Faz-dD-v4c" secondAttribute="trailing" constant="16" id="EfZ-su-bfV"/>
+                    <constraint firstAttribute="bottom" secondItem="Faz-dD-v4c" secondAttribute="bottom" constant="20" id="fsD-KT-4lB"/>
+                    <constraint firstItem="Faz-dD-v4c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="h4p-b7-bc1"/>
+                    <constraint firstItem="Faz-dD-v4c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="pYt-PC-VOI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkImageView" destination="o8c-Ru-Fiy" id="DxM-dA-NtY"/>
+                <outlet property="collectionView" destination="20U-gL-Ijs" id="zGX-sP-5WS"/>
+                <outlet property="mainView" destination="Faz-dD-v4c" id="i0f-cB-L8S"/>
+                <outlet property="priceLbl" destination="5va-LG-Ynh" id="GPn-NA-4Ar"/>
+                <outlet property="titleLbl" destination="fXR-Cu-Dk9" id="lJ4-Ek-dTP"/>
+            </connections>
+            <point key="canvasLocation" x="213.768115942029" y="184.15178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_icon" width="32" height="32"/>
+    </resources>
+</document>
