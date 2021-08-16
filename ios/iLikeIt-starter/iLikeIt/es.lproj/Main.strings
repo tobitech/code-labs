@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "You have sold 1000 apps in 20 months"; ObjectID = "A6F-QT-qam"; */
+"A6F-QT-qam.text" = "Has vendido 1000 aplicaciones en 20 meses";
+
+/* Class = "UIButton"; normalTitle = "You like?"; ObjectID = "a8H-hM-mSb"; */
+"a8H-hM-mSb.normalTitle" = "¿Es bueno?";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "jSR-nf-1wA"; */
+"jSR-nf-1wA.text" = "Hola";

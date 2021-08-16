@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y97-YT-9I0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="gLZ-wp-IRE">
+            <objects>
+                <viewController id="y97-YT-9I0" customClass="MainViewController" customModule="iLikeIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jEj-AR-pto">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-nf-1wA">
+                                <rect key="frame" x="168" y="70" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8H-hM-mSb">
+                                <rect key="frame" x="157" y="99" width="60" height="30"/>
+                                <state key="normal" title="You like?"/>
+                                <connections>
+                                    <action selector="likeButtonPressed" destination="y97-YT-9I0" eventType="touchUpInside" id="8ca-yF-NeC"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have sold 1000 apps in 20 months" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A6F-QT-qam">
+                                <rect key="frame" x="40" y="137" width="295" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iLikeIt" translatesAutoresizingMaskIntoConstraints="NO" id="mLL-9z-Qxb">
+                                <rect key="frame" x="37" y="166" width="300" height="228"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mLL-9z-Qxb" firstAttribute="centerX" secondItem="jEj-AR-pto" secondAttribute="centerX" id="0dG-BM-b4G"/>
+                            <constraint firstItem="A6F-QT-qam" firstAttribute="centerX" secondItem="jEj-AR-pto" secondAttribute="centerX" id="0gx-Cf-PzJ"/>
+                            <constraint firstItem="a8H-hM-mSb" firstAttribute="centerX" secondItem="jEj-AR-pto" secondAttribute="centerX" id="Ggs-ra-QDS"/>
+                            <constraint firstItem="mLL-9z-Qxb" firstAttribute="top" secondItem="A6F-QT-qam" secondAttribute="bottom" constant="8" symbolic="YES" id="GnD-3t-nGb"/>
+                            <constraint firstItem="jSR-nf-1wA" firstAttribute="centerX" secondItem="jEj-AR-pto" secondAttribute="centerX" id="J6y-3t-5Ut"/>
+                            <constraint firstItem="jSR-nf-1wA" firstAttribute="top" secondItem="2Sa-Vi-rqQ" secondAttribute="top" constant="50" id="hd4-lT-fg0"/>
+                            <constraint firstItem="a8H-hM-mSb" firstAttribute="top" secondItem="jSR-nf-1wA" secondAttribute="bottom" constant="8" symbolic="YES" id="oDa-9v-3BM"/>
+                            <constraint firstItem="A6F-QT-qam" firstAttribute="top" secondItem="a8H-hM-mSb" secondAttribute="bottom" constant="8" symbolic="YES" id="yTl-IM-hSL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Sa-Vi-rqQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="mLL-9z-Qxb" id="H0c-67-FK9"/>
+                        <outlet property="likeButton" destination="a8H-hM-mSb" id="QUF-B7-1qx"/>
+                        <outlet property="salesCountLabel" destination="A6F-QT-qam" id="QRY-xh-Sx4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lmv-fx-7mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-871" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iLikeIt" width="300" height="228"/>
+    </resources>
+</document>
